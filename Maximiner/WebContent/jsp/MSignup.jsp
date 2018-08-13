@@ -11,7 +11,7 @@
 </head>
 <body>
 <div class="container">
-    <form class="well form-horizontal" action="http://maximineranalytics.com/mycon/save_user" method="post" id="register_form">
+    <form class="well form-horizontal" action="${pageContext.request.contextPath}/regVal" method="post" id="register_form">
 <fieldset>
 
 <!-- Form Name -->
