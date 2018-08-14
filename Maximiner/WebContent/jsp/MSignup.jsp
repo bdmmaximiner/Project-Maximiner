@@ -106,8 +106,8 @@
 				</tr>
 				<tr>
 					<td>D.O.J</td>
-					<td><input name="birth_date" placeholder="Date Of Joining"
-						class="form-control datepicker" id="joinig-date" type="date"><br>
+					<td><input name="joinig_date" placeholder="Date Of Joining"
+						class="form-control datepicker" id="joinig_date" type="date"><br>
 					</td>
 				</tr>
 				<tr>
