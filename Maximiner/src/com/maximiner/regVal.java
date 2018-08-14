@@ -20,10 +20,13 @@ public class regVal extends HttpServlet implements Servlet {
 
 		Connection con = null;
 		Statement stmt = null;
-
-		System.out.println("working");
-		System.out.println(request.getParameter("first_name"));
-		System.out.println(request.getParameter("birth_date"));
+		System.out.println(
+				"INSERT INTO MSIGNUP (FIRST_NAME, LAST_NAME, CONTACT_NO, USER_NAME,DESIGNATION,GENDER,PASSWORD,CONFIRM_PASSWORD,EMAIL,ADDRESS) VALUES ('"
+						+ request.getParameter("FIRST_NAME").toString() + "', " + request.getParameter("LAST_NAME")
+						+ ", '" + request.getParameter("CONTACT_NO") + "', '" + request.getParameter("USER_NAME") + "',"
+						+ request.getParameter("DESIGNATION") + "'," + request.getParameter("GENDER") + "',"
+						+ request.getParameter("PASSWORD") + "'," + request.getParameter("CONFIRM_PASSWORD") + "',"
+						+ request.getParameter("EMAIL") + "'," + request.getParameter("ADDRESS") + "')");
 
 		try {
 			con = new OracalDatabaseConnect().Connect();
@@ -38,6 +41,14 @@ public class regVal extends HttpServlet implements Servlet {
 					+ "      TRIG := 'CREATE TRIGGER MSIGNUP_TRIGGER BEFORE INSERT ON MSIGNUP REFERENCING NEW AS NEW OLD AS OLD FOR EACH ROW  BEGIN  SELECT MSIGNUP_SEQ.NEXTVAL INTO :NEW.SID FROM DUAL;  END;'; \r\n"
 					+ "\r\n" + "      EXECUTE IMMEDIATE V_SQL; \r\n" + "\r\n" + "      EXECUTE IMMEDIATE V_SQL1; \r\n"
 					+ "\r\n" + "      EXECUTE IMMEDIATE TRIG; \r\n" + "    END IF; \r\n" + "END; ");
+			stmt.executeUpdate(
+					"INSERT INTO MSIGNUP (FIRST_NAME, LAST_NAME, CONTACT_NO, USER_NAME,DESIGNATION,GENDER,PASSWORD,CONFIRM_PASSWORD,EMAIL,ADDRESS) VALUES ('"
+							+ request.getParameter("FIRST_NAME").toString() + "', " + request.getParameter("LAST_NAME")
+							+ ", '" + request.getParameter("CONTACT_NO") + "', '" + request.getParameter("USER_NAME")
+							+ "'," + request.getParameter("DESIGNATION") + "'," + request.getParameter("GENDER") + "',"
+							+ request.getParameter("PASSWORD") + "'," + request.getParameter("CONFIRM_PASSWORD") + "',"
+							+ request.getParameter("EMAIL") + "'," + request.getParameter("ADDRESS") + "')");
+			con.commit();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
