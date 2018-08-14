@@ -1,0 +1,21 @@
+@charset "ISO-8859-1";
+#id1
+	{
+		width:500px;
+		text-align:center;
+		align-content: center;
+		background-color:#ABB2B9 ;
+		opacity: 0.8;
+		padding:50px;
+		margin:20px;
+		left:300px;
+	color:#212F3D;
+	font-size: 18px;
+
+	}
+	body
+	{
+		background-image: url("../images/m1.jpg" );
+			font-family: monospace;	
+
+	}
