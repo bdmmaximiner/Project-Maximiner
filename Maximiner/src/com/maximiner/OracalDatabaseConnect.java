@@ -10,7 +10,6 @@ public class OracalDatabaseConnect {
 	public Connection Connect() throws Exception {
 		Class.forName("oracle.jdbc.driver.OracleDriver");
 		return DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","system");
-
 	}
 
 	public static int rowCount(ResultSet rs) throws SQLException {
