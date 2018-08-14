@@ -18,7 +18,7 @@
 	</h1>
 	<form action="${pageContext.request.contextPath}/regVal" id=register
 		method="post">
-		<div id="id1" align="left">
+		<div id="id1">
 			<table>
 				<tr>
 					<td>FIRST NAME</td>
