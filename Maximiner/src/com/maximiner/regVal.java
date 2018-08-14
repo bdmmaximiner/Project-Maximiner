@@ -20,13 +20,15 @@ public class regVal extends HttpServlet implements Servlet {
 
 		Connection con = null;
 		Statement stmt = null;
+		System.out.println(request.getParameter("first_name"));
 		System.out.println(
-				"INSERT INTO MSIGNUP (FIRST_NAME, LAST_NAME, CONTACT_NO, USER_NAME,DESIGNATION,GENDER,PASSWORD,CONFIRM_PASSWORD,EMAIL,ADDRESS) VALUES ('"
-						+ request.getParameter("FIRST_NAME").toString() + "', " + request.getParameter("LAST_NAME")
-						+ ", '" + request.getParameter("CONTACT_NO") + "', '" + request.getParameter("USER_NAME") + "',"
-						+ request.getParameter("DESIGNATION") + "'," + request.getParameter("GENDER") + "',"
-						+ request.getParameter("PASSWORD") + "'," + request.getParameter("CONFIRM_PASSWORD") + "',"
-						+ request.getParameter("EMAIL") + "'," + request.getParameter("ADDRESS") + "')");
+				"INSERT INTO MSIGNUP (FIRST_NAME, LAST_NAME, CONTACT_NO, USER_NAME,DESIGNATION,GENDER,PASSWORD,CONFIRM_PASSWORD,BIRTH_DATE,JOIN_DATE,EMAIL,ADDRESS) VALUES ('"
+						+ request.getParameter("first_name").toString() + "', '" + request.getParameter("last_name")
+						+ ", '" + request.getParameter("contact_no") + "', '" + request.getParameter("user_name")
+						+ "','" + request.getParameter("designation") + "','" + request.getParameter("gender") + "',"
+						+ request.getParameter("user_password") + "','" + request.getParameter("confirm_password")
+						+ "','" + request.getParameter("birth_date") + "','" + request.getParameter("joinig_date")
+						+ "','" + request.getParameter("email") + "','" + request.getParameter("address") + "')");
 
 		try {
 			con = new OracalDatabaseConnect().Connect();
@@ -42,12 +44,14 @@ public class regVal extends HttpServlet implements Servlet {
 					+ "\r\n" + "      EXECUTE IMMEDIATE V_SQL; \r\n" + "\r\n" + "      EXECUTE IMMEDIATE V_SQL1; \r\n"
 					+ "\r\n" + "      EXECUTE IMMEDIATE TRIG; \r\n" + "    END IF; \r\n" + "END; ");
 			stmt.executeUpdate(
-					"INSERT INTO MSIGNUP (FIRST_NAME, LAST_NAME, CONTACT_NO, USER_NAME,DESIGNATION,GENDER,PASSWORD,CONFIRM_PASSWORD,EMAIL,ADDRESS) VALUES ('"
-							+ request.getParameter("FIRST_NAME").toString() + "', " + request.getParameter("LAST_NAME")
-							+ ", '" + request.getParameter("CONTACT_NO") + "', '" + request.getParameter("USER_NAME")
-							+ "'," + request.getParameter("DESIGNATION") + "'," + request.getParameter("GENDER") + "',"
-							+ request.getParameter("PASSWORD") + "'," + request.getParameter("CONFIRM_PASSWORD") + "',"
-							+ request.getParameter("EMAIL") + "'," + request.getParameter("ADDRESS") + "')");
+					"INSERT INTO MSIGNUP (FIRST_NAME, LAST_NAME, CONTACT_NO, USER_NAME,DESIGNATION,GENDER,PASSWORD,CONFIRM_PASSWORD,BIRTH_DATE,JOIN_DATE,EMAIL,ADDRESS) VALUES ('"
+							+ request.getParameter("first_name").toString() + "', '" + request.getParameter("last_name")
+							+ "', '" + request.getParameter("contact_no") + "', '" + request.getParameter("user_name")
+							+ "','" + request.getParameter("designation") + "','" + request.getParameter("gender")
+							+ "','" + request.getParameter("user_password") + "','"
+							+ request.getParameter("confirm_password") + "','" + request.getParameter("birth_date")
+							+ "','" + request.getParameter("joinig_date") + "','" + request.getParameter("email")
+							+ "','" + request.getParameter("address") + "')");
 			con.commit();
 		} catch (Exception e) {
 			e.printStackTrace();
