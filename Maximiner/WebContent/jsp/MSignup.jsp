@@ -16,7 +16,7 @@
 	<h1>
 		<b>REGISTRATION</b>
 	</h1>
-	<form action="${pageContext.request.contextPath}/regVal" id=LOGIN
+	<form action="${pageContext.request.contextPath}/regVal" id=mregister
 		method="post">
 		<div id="id1" align="left">
 			<table>
