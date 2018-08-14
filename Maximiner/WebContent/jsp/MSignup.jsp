@@ -170,7 +170,7 @@
     <div class="col-md-8 inputGroupContainer">
     <div class="input-group">
   <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-  <input name="birth_date" placeholder="Date Of Birth" class="form-control datepicker" id="birth_date" type="text">
+  <input name="birth_date" placeholder="Date Of Birth" class="form-control datepicker" id="birth_date" type="date">
     </div>
   </div>
 </div>
