@@ -1,20 +1,24 @@
 @charset "ISO-8859-1";
 #id1
 	{
+	position:absolute;
 		width:500px;
 		align-content: center;
-		background-color:#ABB2B9 ;
+		background-color:black ;
 		opacity: 0.8;
-		padding:50px;
+		padding:90px;
 		margin:20px;
 		left:300px;
-		color:#212F3D;
+		color:white;
 		font-size: 18px;
-			text-align:center;
+		text-align:center;
+		padding-top:5px
+		
 	}
 	
-	body
+body
 	{
-		background-image: url("../images/m1.jpg" );
+	  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("../images/m1.jpg");
+		opacity:0.7;
 		
 	}

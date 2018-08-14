@@ -13,12 +13,14 @@
 <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 <body>
+	
+	<div id="id1">
 	<h1>
 		<b>REGISTRATION</b>
 	</h1>
 	<form action="${pageContext.request.contextPath}/regVal" id=register
 		method="post">
-		<div id="id1">
+		
 			<table>
 				<tr>
 					<td>FIRST NAME</td>
@@ -83,7 +85,7 @@
 				</tr>
 
 				<tr>
-					<td>Gender</td>
+					<td>GENDER</td>
 					<td><input type="radio" name="gender" value="Male">Male
 						<input type="radio" name="gender" value="Female">Female<br></td>
 				</tr>
@@ -123,7 +125,7 @@
 			</table>
 			<input type="submit" value="REGISTER"
 				style="background-color: #212F3C; color: white; padding: 20px;">
-		</div>
-	</form>
+		
+	</form></div>
 
 </body>
