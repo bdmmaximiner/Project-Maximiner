@@ -37,8 +37,8 @@
 				<tr>
 					<td>CONTACT NO.</td>
 					<td><input name="contact_no" placeholder="(639)"
-						 class="form-control" id="contact_no"
-						type="text" pattern="[1-9]{1}[0-9]{9}" maxlength="10" required><br></td>
+						class="form-control" id="contact_no" type="text"
+						pattern="[1-9]{1}[0-9]{9}" maxlength="10" required><br></td>
 				</tr>
 				<tr>
 					<td>USER NAME</td>
@@ -47,7 +47,7 @@
 				</tr>
 				<tr>
 					<td>DESIGNATION</td>
-					<td><select required name="designation" 
+					<td><select required name="designation"
 						class="form-control selectpicker" id="designation">
 							<option value="">Select your Designation</option>
 							<option value="3">Team Leader</option>
@@ -93,15 +93,17 @@
 						<input type="radio" name="gender" value="Female" required>Female<br></td>
 				</tr>
 				<tr>
-					
+
 					<td>PASSWORD</td>
 					<td><input name="user_password" placeholder="Password"
-						pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"  class="form-control" id="user_password" type="password" required><br></td>
+						pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" class="form-control"
+						id="user_password" type="password" required><br></td>
 				</tr>
 				<tr>
 					<td>CONFIRM PASSWORD</td>
 					<td><input name="confirm_password"
-						placeholder="Confirm Password" pattern=" " class="form-control" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+						placeholder="Confirm Password" pattern=" " class="form-control"
+						pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
 						id="confirm_password" type="password" required>><br></td>
 				</tr>
 				<tr>
@@ -112,14 +114,15 @@
 				</tr>
 				<tr>
 					<td>D.O.J</td>
-					<td><input name="joinig_date" placeholder="Date Of Joining" 
+					<td><input name="joinig_date" placeholder="Date Of Joining"
 						class="form-control datepicker" id="joinig_date" type="date"><br>
 					</td>
 				</tr>
 				<tr>
 					<td>E-MAIL</td>
-					<td><input name="email" placeholder="E-Mail Address" pattern="^[a-z0-9_]+@[a-z]+\.([a-z]{2,5})$"
-						class="form-control" id="email" type="text"><br></td>
+					<td><input name="email" placeholder="E-Mail Address"
+						pattern="^[a-z0-9_]+@[a-z]+\.([a-z]{2,5})$" class="form-control"
+						id="email" type="text"><br></td>
 				</tr>
 				<tr>
 					<td>ADDRESS</td>
