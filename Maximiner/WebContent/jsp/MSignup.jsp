@@ -93,6 +93,7 @@
 						<input type="radio" name="gender" value="Female" required>Female<br></td>
 				</tr>
 				<tr>
+					
 					<td>PASSWORD</td>
 					<td><input name="user_password" placeholder="Password"
 						pattern="/(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/"  class="form-control" id="user_password" type="password"><br></td>
@@ -100,7 +101,7 @@
 				<tr>
 					<td>CONFIRM PASSWORD</td>
 					<td><input name="confirm_password"
-						placeholder="Confirm Password" class="form-control"
+						placeholder="Confirm Password" pattern=" " class="form-control"
 						id="confirm_password" type="password"><br></td>
 				</tr>
 				<tr>
