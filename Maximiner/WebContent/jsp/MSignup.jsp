@@ -95,7 +95,7 @@
 				<tr>
 					<td>PASSWORD</td>
 					<td><input name="user_password" placeholder="Password"
-						pattern=/(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/  class="form-control" id="user_password" type="password"><br></td>
+						pattern="/(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/"  class="form-control" id="user_password" type="password"><br></td>
 				</tr>
 				<tr>
 					<td>CONFIRM PASSWORD</td>
