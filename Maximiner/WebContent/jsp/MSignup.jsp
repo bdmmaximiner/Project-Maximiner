@@ -13,29 +13,32 @@
 <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	
+
 	<div id="id1">
-	<h1>
-		<b>REGISTRATION</b>
-	</h1>
-	<form action="${pageContext.request.contextPath}/regVal" id=register
-		method="post">
-		
+		<h1>
+			<b>REGISTRATION</b>
+		</h1>
+		<form action="${pageContext.request.contextPath}/regVal" id=register
+			method="post">
+
 			<table>
 				<tr>
 					<td>FIRST NAME</td>
 					<td><input name="first_name" placeholder="First Name"
-						class="form-control" id="first_name" type="text"><br></td>
+						pattern="[a-zA-Z]*$" class="form-control" id="first_name"
+						type="text"><br></td>
 				</tr>
 				<tr>
 					<td>LAST NAME</td>
 					<td><input name="last_name" placeholder="Last Name"
-						class="form-control" id="last_name" type="text"><br></td>
+						pattern="[a-zA-Z]*$" class="form-control" id="last_name"
+						type="text"><br></td>
 				</tr>
 				<tr>
 					<td>CONTACT NO.</td>
 					<td><input name="contact_no" pattern="\d*" placeholder="(639)"
-						class="form-control" id="contact_no" type="text" maxlength="10"><br></td>
+						pattern="^[0-9]*$" class="form-control" id="contact_no"
+						type="text" maxlength="10"><br></td>
 				</tr>
 				<tr>
 					<td>USER NAME</td>
@@ -44,7 +47,7 @@
 				</tr>
 				<tr>
 					<td>DESIGNATION</td>
-					<td><select name="designation"
+					<td><select required name="designation" 
 						class="form-control selectpicker" id="designation">
 							<option value="">Select your Designation</option>
 							<option value="3">Team Leader</option>
@@ -86,8 +89,8 @@
 
 				<tr>
 					<td>GENDER</td>
-					<td><input type="radio" name="gender" value="Male">Male
-						<input type="radio" name="gender" value="Female">Female<br></td>
+					<td><input type="radio" name="gender" value="Male" required>Male
+						<input type="radio" name="gender" value="Female" required>Female<br></td>
 				</tr>
 				<tr>
 					<td>PASSWORD</td>
@@ -125,7 +128,8 @@
 			</table>
 			<input type="submit" value="REGISTER"
 				style="background-color: #212F3C; color: white; padding: 20px;">
-		
-	</form></div>
+
+		</form>
+	</div>
 
 </body>
