@@ -26,24 +26,24 @@
 					<td>FIRST NAME</td>
 					<td><input name="first_name" placeholder="First Name"
 						pattern="[a-zA-Z]*$" class="form-control" id="first_name"
-						type="text"><br></td>
+						type="text" required><br></td>
 				</tr>
 				<tr>
 					<td>LAST NAME</td>
 					<td><input name="last_name" placeholder="Last Name"
 						pattern="[a-zA-Z]*$" class="form-control" id="last_name"
-						type="text"><br></td>
+						type="text" required><br></td>
 				</tr>
 				<tr>
 					<td>CONTACT NO.</td>
 					<td><input name="contact_no" pattern="\d*" placeholder="(639)"
 						pattern="^[0-9]*$" class="form-control" id="contact_no"
-						type="text" maxlength="10"><br></td>
+						type="text" maxlength="10" required><br></td>
 				</tr>
 				<tr>
 					<td>USER NAME</td>
 					<td><input name="user_name" placeholder="Username"
-						class="form-control" id="user_name" type="text"><br></td>
+						class="form-control" id="user_name" type="text" required><br></td>
 				</tr>
 				<tr>
 					<td>DESIGNATION</td>
