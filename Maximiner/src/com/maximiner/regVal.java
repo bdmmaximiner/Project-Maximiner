@@ -20,7 +20,7 @@ public class regVal extends HttpServlet implements Servlet {
 
 		Connection con = null;
 		Statement stmt = null;
-		System.out.println(request.getParameter("first_name"));
+		
 		System.out.println(
 				"INSERT INTO MSIGNUP (FIRST_NAME, LAST_NAME, CONTACT_NO, USER_NAME,DESIGNATION,GENDER,PASSWORD,CONFIRM_PASSWORD,BIRTH_DATE,JOIN_DATE,EMAIL,ADDRESS) VALUES ('"
 						+ request.getParameter("first_name").toString() + "', '" + request.getParameter("last_name")

@@ -10,7 +10,7 @@
 <script src="ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.html"></script>
 <script
 	src="maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.html"></script>
-<link rel="stylesheet" type="text/css" href="../css/style.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	
