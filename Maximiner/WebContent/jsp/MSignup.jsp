@@ -96,13 +96,13 @@
 					
 					<td>PASSWORD</td>
 					<td><input name="user_password" placeholder="Password"
-						pattern="/(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/"  class="form-control" id="user_password" type="password"><br></td>
+						pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"  class="form-control" id="user_password" type="password" required><br></td>
 				</tr>
 				<tr>
 					<td>CONFIRM PASSWORD</td>
 					<td><input name="confirm_password"
-						placeholder="Confirm Password" pattern=" " class="form-control"
-						id="confirm_password" type="password"><br></td>
+						placeholder="Confirm Password" pattern=" " class="form-control" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+						id="confirm_password" type="password" required>><br></td>
 				</tr>
 				<tr>
 					<td>D.O.B</td>
@@ -112,13 +112,13 @@
 				</tr>
 				<tr>
 					<td>D.O.J</td>
-					<td><input name="joinig_date" placeholder="Date Of Joining"
+					<td><input name="joinig_date" placeholder="Date Of Joining" 
 						class="form-control datepicker" id="joinig_date" type="date"><br>
 					</td>
 				</tr>
 				<tr>
 					<td>E-MAIL</td>
-					<td><input name="email" placeholder="E-Mail Address"
+					<td><input name="email" placeholder="E-Mail Address" pattern="^[a-z0-9_]+@[a-z]+\.([a-z]{2,5})$"
 						class="form-control" id="email" type="text"><br></td>
 				</tr>
 				<tr>
