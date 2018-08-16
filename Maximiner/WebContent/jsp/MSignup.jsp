@@ -104,7 +104,7 @@
 					<td><input name="confirm_password"
 						placeholder="Confirm Password" pattern=" " class="form-control"
 						pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
-						id="confirm_password" type="password" required>><br></td>
+						id="confirm_password" type="password" required><br></td>
 				</tr>
 				<tr>
 					<td>D.O.B</td>
