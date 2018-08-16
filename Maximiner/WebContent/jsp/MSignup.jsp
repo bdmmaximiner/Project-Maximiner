@@ -36,9 +36,9 @@
 				</tr>
 				<tr>
 					<td>CONTACT NO.</td>
-					<td><input name="contact_no" pattern="\d*" placeholder="(639)"
-						pattern="^[0-9]*$" class="form-control" id="contact_no"
-						type="text" maxlength="10" required><br></td>
+					<td><input name="contact_no" placeholder="(639)"
+						 class="form-control" id="contact_no"
+						type="text" pattern="[1-9]{1}[0-9]{9}" maxlength="10" required><br></td>
 				</tr>
 				<tr>
 					<td>USER NAME</td>
