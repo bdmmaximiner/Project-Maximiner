@@ -1,24 +1,53 @@
-@charset "ISO-8859-1";
-#id1
-	{
-	position:absolute;
+ #main{
+  width: auto;
+ height: 900px;
+  text-align: center;
+  background-color: grey;
+}
+h1
+{
+	text-align: center; 
+	font-family: monospace;
+}
+#main2{
+
+	position: absolute;
+	top: 0px;
+	left: 50px;
+	background-color: white;
+	margin: 100px;
+	padding:70px;
+	color:black;
+	font-family: monospace;
+		
+}
+.input-group
+{
+	width:400px;
+
+}
+.form-control address
+{
 		width:500px;
-		align-content: center;
-		background-color:black ;
-		opacity: 0.8;
-		padding:90px;
-		margin:20px;
-		left:300px;
-		color:white;
-		font-size: 18px;
-		text-align:center;
-		padding-top:5px
-		
-	}
+}
+#submit
+{
+	margin-left: 345px;
+	position: absolute;
+	background-color: green;
+	border:none;
+	color:white;
+	padding:16px 32px;
+	text-align: center;font-size: 16px;
 	
-body
-	{
-	  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("../images/m1.jpg");
-		opacity:0.7;
-		
-	}
+	opacity: 0.6;
+	transition: 0.3s;
+	display: inline-block;
+	text-decoration: none;
+	cursor: pointer;
+	font-size:25px;
+}
+#submit:hover
+{
+	opacity: 1;
+}
