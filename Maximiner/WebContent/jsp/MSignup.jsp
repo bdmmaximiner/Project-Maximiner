@@ -51,7 +51,7 @@
 							</div>
 							<div class="form-group ">
 								<span id="firstnameInvalid"
-									style="color: red; visibility: hidden"> </span>
+									style="color: red;"> </span>
 							</div>
 						</div>
 
@@ -64,6 +64,10 @@
 								<input name="last_name" placeholder="Last Name"
 									class="form-control" id="last_name" pattern="[a-zA-Z]*$"
 									type="text" required />
+							</div>
+							<div class="form-group ">
+								<span id="lastnameInvalid"
+									style="color: red;"> </span>
 							</div>
 						</div>
 

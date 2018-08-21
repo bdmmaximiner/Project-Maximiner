@@ -54,3 +54,6 @@ h1
 #first_name{
 	text-transform: capitalize;
 }
+#last_name{
+	text-transform: capitalize;
+}
