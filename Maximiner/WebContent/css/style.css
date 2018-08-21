@@ -51,3 +51,6 @@ h1
 {
 	opacity: 1;
 }
+#first_name{
+	text-transform: capitalize;
+}

@@ -4,7 +4,7 @@ $(document).ready(function() {
 });
 
 function onlyAlphabets() {
-	var regex = new RegExp("[a-zA-Z]+\\.?");
+	var regex = ("[a-zA-Z]+\\.?");
 	var key = String.fromCharCode(!event.charCode ? event.which
 			: event.charCode);
 	if (!regex.test(key)) {
@@ -16,5 +16,4 @@ function onlyAlphabets() {
 		document.getElementById("firstnameInvalid").style.visibility = "hidden";
 		$("#firstnameInvalid").text("");
 	}
-
 }
