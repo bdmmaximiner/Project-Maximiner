@@ -47,7 +47,9 @@
 								</div>
 								<input type="text" id="first_name" name="first_name"
 									class="form-control" pattern="[a-zA-Z]*$"
-									placeholder="First Name" required />
+									placeholder="First Name" required /> <span
+									id="firstnameInvalid" style="color: red; visibility: hidden">
+									First Name is Invalid </span>
 							</div>
 						</div>
 
