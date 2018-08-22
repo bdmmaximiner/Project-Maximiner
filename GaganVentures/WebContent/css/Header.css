@@ -1,0 +1,33 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	font-family: Chivo-Regular;
+}
+.navbar {
+	position: fixed;
+	top: 10px;
+	text-align: center;
+	transition-duration: 1s;
+	width: 100%;
+	margin: auto;
+	height: 50px;
+	opacity: 0.9;
+	z-index: 1;
+	background: transparent;
+}
+
+.navbar ul li {
+	list-style-type: none;
+	display: inline-block;
+	padding: 10px 10px;
+	color: White;
+	font-size: 24px;
+	cursor: pointer;
+	border-radius: 0px;
+	transition: .1s;
+	height: 50px;
+}
+
+.navbar ul li:hover {
+	background: orange;
+}
