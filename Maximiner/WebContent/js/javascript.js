@@ -8,12 +8,10 @@ function onlyAlphabetsFirstName() {
 	var key = String.fromCharCode(!event.charCode ? event.which
 			: event.charCode);
 	if (!regex.test(key)) {
-		$("#firstnameInvalid").text(key +" is Invalid");
-		document.getElementById("firstnameInvalid").style.visibility = "visible";
+		$("#firstnameInvalid").text(key + " is Invalid");
 		event.preventDefault();
 		return false;
-	}else{
-		document.getElementById("firstnameInvalid").style.visibility = "hidden";
+	} else {
 		$("#firstnameInvalid").text("");
 	}
 }
@@ -22,12 +20,10 @@ function onlyAlphabetsLastName() {
 	var key = String.fromCharCode(!event.charCode ? event.which
 			: event.charCode);
 	if (!regex.test(key)) {
-		$("#lastnameInvalid").text(key +" is Invalid");
-		document.getElementById("firstnameInvalid").style.visibility = "visible";
+		$("#lastnameInvalid").text(key + " is Invalid");
 		event.preventDefault();
 		return false;
-	}else{
-		document.getElementById("firstnameInvalid").style.visibility = "hidden";
+	} else {
 		$("#lastnameInvalid").text("");
 	}
 }

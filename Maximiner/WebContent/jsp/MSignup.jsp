@@ -49,7 +49,7 @@
 									class="form-control" pattern="[a-zA-Z]*$"
 									placeholder="First Name" required />
 							</div>
-							<div class="form-group ">
+							<div class="form-group">
 								<span id="firstnameInvalid"
 									style="color: red;"> </span>
 							</div>
@@ -66,8 +66,7 @@
 									type="text" required />
 							</div>
 							<div class="form-group ">
-								<span id="lastnameInvalid"
-									style="color: red;"> </span>
+								<span id="lastnameInvalid" style="color: red;"> </span>
 							</div>
 						</div>
 
@@ -77,7 +76,7 @@
 								<div class="input-group-addon">
 									<span class="glyphicon glyphicon-phone"></span>
 								</div>
-								<input name="contact_no" pattern="\d*" placeholder="(639)"
+								<input name="contact_no" pattern="\d*" placeholder="(+91)"
 									class="form-control" id="contact_no" type="text"
 									pattern="[1-9]{1}[0-9]{9}" maxlength="10" required />
 							</div>
