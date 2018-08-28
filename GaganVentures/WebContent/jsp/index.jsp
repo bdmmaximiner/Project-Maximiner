@@ -92,8 +92,8 @@
 			<div class="col-sm-4">
 				<img src="${pageContext.request.contextPath}/images/logo1.png">
 			</div>
-			<div class="col-sm-8" id="social">
-				<div class="nav navbar-nav navbar-right">
+			<div class="col-sm-8">
+				<div class="nav navbar-nav navbar-right" id="social">
 					<a href="#" class="fa fa-google-plus"></a> <a href="#"
 						class="fa fa-twitter"></a> <a href="#" class="fa fa-skype"></a> <a
 						href="#" class="fa fa-dribbble"></a>
@@ -153,9 +153,9 @@
 				</div>
 			</div>
 
-			<div class="bnrwthree-address" id="back_opacity">
+			<div  id="back_opacity">
 				<div class="row">
-					<div class="col-sm-4">
+					<div class="col-sm-4"	>
 						<i class="fa fa-map-marker" aria-hidden="true">BANGALORE,INDIA</i>
 					</div>
 					<div class="col-sm-4">
@@ -170,6 +170,7 @@
 			</div>
 		</div>
 	</div>
+	
 	<!-- main -->
 	<!-- 	stats -->
 	<div class="jumbotron jarallax" data-jarallax data-speed="0.6">

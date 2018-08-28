@@ -3,7 +3,7 @@ body {
 	font-family: 'Roboto', sans-serif;
 	background: #fff;
 	position: relative;
-	height: 5000px;
+	overflow-x: hidden;
 }
 
 body a {
@@ -1725,7 +1725,7 @@ ul.simplefilter {
 
 i.fa {
 	display: inline-block;
-	box-shadow: 0px 0px 2px #888;
+	box-shadow: 0px 0px 0px #888;
 	padding: 0.5em 0.6em;
 }
 
@@ -1733,142 +1733,138 @@ i.fa {
 .jumbotron {
 	background: url(../images/image8.jpg) no-repeat 0px 0px;
 }
-#show{
+
+#show {
 	display: none;
-	
 }
 
-#imgscr #myCarousel #car img
-{
-      margin:auto;
-width:100%;
-  background-size:500px;
-  background-color: black;
-
-
-
+#imgscr #myCarousel #car img {
+	margin: auto;
+	width: 100%;
+	background-size: 500px;
+	background-color: black;
 }
 
 .banner .btn {
-  position: absolute;
-  top:  70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: black;
-  color: white;
-  font-size: 16px;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
- 
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	background-color: black;
+	color: white;
+	font-size: 16px;
+	padding: 12px 24px;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
 }
+
 .btn:before {
-  content:'';
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 0px;
-  height: 42px;
-  background: rgba(255,255,255,0.3);
-  border-radius: 5px;
-  transition: all 1s ease;
-} 
+	content: '';
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 0px;
+	height: 42px;
+	background: rgba(255, 255, 255, 0.3);
+	border-radius: 5px;
+	transition: all 1s ease;
+}
+
 .btn:hover:before {
-  width: 100%;
-}
-#text 
-{
-  font-size: 50px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color:white;
-      }
-#id2 img
-{
-  position: absolute;
-  width: 150px;
-  z-index: 1;
+	width: 100%;
 }
 
-#social{
-position: absolute;
-top: 10px;
-left: 350px;
-z-index: 1;
-padding: 20px;
+#text {
+	font-size: 50px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
 }
 
-#social a
-{
-padding: 20px;
-text-decoration: none;
-    color:black;
-    font-size: 15px;
-    display: inline;
-    -webkit-border-radius: 60%;
-    -moz-border-radius: 50%;
-    border-radius: 80%;
-    -webkit-box-shadow: 0px 0px 1px 0px black;
-    -moz-box-shadow: 0px 0px 1px 0px black;
-    box-shadow: 0px 0px 1px 0px black;
-    width: 35px;
-    height: 35px;
-  margin:10px; 
-    line-height: 2.3em;
-    }
+#id2 img {
+	position: absolute;
+	width: 150px;
+	z-index: 1;
+}
 
-
-
-#social a:hover
-{
-    color:black;
-    box-shadow: 0px 0px 13px 2px black;
-
+#social {
+	position: absolute;
+	top: 10px;
+	left: 350px;
+	z-index: 1;
+	padding: 20px;
+	display: inline;
 }
 
 #social a {
-    color:white;
-    text-decoration: none;
-    padding-top: 2px;
-padding-bottom: 10px;
-padding-right:5px;
-padding-left: 5px;
-padding: 10px;
+	padding: 20px;
+	text-decoration: none;
+	color: black;
+	font-size: 15px;
+	display: inline;
+	-webkit-border-radius: 60%;
+	-moz-border-radius: 50%;
+	border-radius: 80%;
+	-webkit-box-shadow: 0px 0px 1px 0px black;
+	-moz-box-shadow: 0px 0px 1px 0px black;
+	box-shadow: 0px 0px 1px 0px black;
+	width: 35px;
+	height: 35px;
+	margin: 10px;
+	line-height: 2.3em;
+}
+
+#social a:hover {
+	color: black;
+	box-shadow: 0px 0px 13px 2px black;
+}
+
+#social a {
+	color: white;
+	text-decoration: none;
+	padding-top: 2px;
+	padding-bottom: 10px;
+	padding-right: 5px;
+	padding-left: 5px;
+	padding: 10px;
 }
 
 a {
-    background-color: transparent;
+	background-color: transparent;
 }
 
-.card-img-top
-{
-  width: 150px;
-
+.card-img-top {
+	width: 150px;
 }
 
-#modal_wid
-{
-  width: 450px;
-  padding:2px;text-align: center;
+#modal_wid {
+	width: 450px;
+	padding: 2px;
+	text-align: center;
 }
-.bnrwthree-address 
- {
-    position:absolute;
-    top:648px;
-    height: 50px;
-    text-align: center;
-    list-style:none;
-opacity: 0.5;
-  background-color: white;
-  width:100%;
-  
-  background-size:500px;
 
+#back_opacity {
+	position: absolute;
+	top: 647px;
+	height: 1000px;
+	text-align: center;
+	opacity: 0.5;
+	background-color: white;
+	width: 100%;
+	outline: none;
+	border-color: transparent;
+	text-decoration: none;
+	background-size: 100px;
+	border-color: transparent;
 }
-.bnrwthree-address i{
-  padding: 25px;
+
+#back_opacity .row .col-sm-4 i {
+	padding: 20px;
+	top: 100px;
+	border-style: none;
+	background-color: transparent;
 }
