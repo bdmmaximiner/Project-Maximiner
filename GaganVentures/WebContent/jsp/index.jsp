@@ -351,7 +351,8 @@
 				<div class="col-md-6 col-sm-6 contact-w3lsright"
 					data-aos="flip-right">
 					<h6>
-						<span>Making your space truly yours...</span>Feel free to get in touch with us if we have a new project or simply something awesome
+						<span>Making your space truly yours...</span>Feel free to get in
+						touch with us if we have a new project or simply something awesome
 					</h6>
 					<div class="address-row">
 						<div class="col-xs-2 address-left">
