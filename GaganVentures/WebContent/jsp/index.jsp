@@ -122,7 +122,7 @@
 				</div>
 
 				<div class="item">
-					<img src="${pageContext.request.contextPath}/images/web3.jpg"
+					<img src="${pageContext.request.contextPath}/images/ga4.jpg"
 						alt="picture3" style="width: 1450px; height: 700px;">
 				</div>
 			</div>
@@ -180,23 +180,38 @@
 	<!-- main -->
 
 	<!-- about -->
-	<div id="about" class="about cd-section">  
-		<div class="container">  
-			<div class="col-md-6 about-w3lleft"> 
-				<h3 class="w3stitle" style="color:#FF4500;"><span>About us</span></h3>
+	<div id="about" class="about cd-section">
+		<div class="container">
+			<div class="col-md-6 about-w3lleft">
+				<h3 class="w3stitle" style="color: #FF4500;">
+					<span>About us</span>
+				</h3>
 				<h4>Why Us??????</h4>
-				<p>With award-winning residential, commercial and leisure properties across the South, to date, We delivered over 20,230 homes and has a development portfolio of more than 44,000 units at various stages of planning and progress, asserting its place as a leading luxury developer in the region.*<br>
->>>>>>> branch 'Common' of https://github.com/bdmmaximiner/Project-Maximiner.git
-
-                Join Our family and experience a luxurious lifestyle designed to give you the ultimate sense of comfort.<br>
-				Joining forces with some of the world’s most eminent fashion and lifestyle brands, We brought new and exciting living concepts to the market in collaborations that include.</p>
-				<a href="#myModal" class="wthree-btn" data-toggle="modal" style="color:#32CD32;"><font color="#FF4500;">Read more </font><span></span></a> 
-			</div> 
-			<div class="col-md-6 about-w3lright">
-				<img src="${pageContext.request.contextPath}/images/img1.jpg" class="img-responsive" alt=" " style="width: 500px;height: 300px;"> 
-				<img src="${pageContext.request.contextPath}/images/img2.jpg" class="img-responsive about-w3lright-img2" alt=" " style="width: 500px;height: 300px;"> 
+				<p>
+					With award-winning residential, commercial and leisure properties
+					across the South, to date, We delivered over 20,230 homes and has a
+					development portfolio of more than 44,000 units at various stages
+					of planning and progress, asserting its place as a leading luxury
+					developer in the region.*<br> >>>>>>> branch 'Common' of
+					https://github.com/bdmmaximiner/Project-Maximiner.git Join Our
+					family and experience a luxurious lifestyle designed to give you
+					the ultimate sense of comfort.<br> Joining forces with some of
+					the world’s most eminent fashion and lifestyle brands, We brought
+					new and exciting living concepts to the market in collaborations
+					that include.
+				</p>
+				<a href="#myModal" class="wthree-btn" data-toggle="modal"
+					style="color: #32CD32;"><font color="#FF4500;">Read more
+				</font><span></span></a>
 			</div>
-			<div class="clearfix"> </div> 
+			<div class="col-md-6 about-w3lright">
+				<img src="${pageContext.request.contextPath}/images/img1.jpg"
+					class="img-responsive" alt=" " style="width: 500px; height: 300px;">
+				<img src="${pageContext.request.contextPath}/images/img2.jpg"
+					class="img-responsive about-w3lright-img2" alt=" "
+					style="width: 500px; height: 300px;">
+			</div>
+			<div class="clearfix"></div>
 		</div>
 	</div>
 	<!-- //about -->
@@ -259,37 +274,43 @@
 		</div>
 		<div class="services-w3ls-row">
 			<div
-				class="col-md-4 col-sm-4 col-xs-6 services-grid agileits-w3layouts" data-aos="flip-left" >
+				class="col-md-4 col-sm-4 col-xs-6 services-grid agileits-w3layouts"
+				data-aos="flip-left">
 				<span class="glyphicon glyphicon-home effect-1" aria-hidden="true"></span>
 				<h5>Cum soluta nobis</h5>
 				<p>Itaque earum rerum hic a sapiente delectus in auctor sapien.</p>
 			</div>
 			<div
-				class="col-md-4 col-sm-4 col-xs-6 services-grid agileits-w3layouts" data-aos="fade-right" >
+				class="col-md-4 col-sm-4 col-xs-6 services-grid agileits-w3layouts"
+				data-aos="fade-right">
 				<span class="glyphicon glyphicon-list-alt effect-1"
 					aria-hidden="true"></span>
 				<h5>Soluta vum nobis</h5>
 				<p>Itaque earum rerum hic a sapiente delectus in auctor sapien.</p>
 			</div>
 			<div
-				class="col-md-4 col-sm-4 col-xs-6 services-grid agileits-w3layouts" data-aos="flip-right" >
+				class="col-md-4 col-sm-4 col-xs-6 services-grid agileits-w3layouts"
+				data-aos="flip-right">
 				<span class="glyphicon glyphicon-tree-deciduous effect-1"
 					aria-hidden="true"></span>
 				<h5>Nobis cum soluta</h5>
 				<p>Itaque earum rerum hic a sapiente delectus in auctor sapien.</p>
 			</div>
-			<div class="col-md-4 col-sm-4 col-xs-6 services-grid bottom-grids" data-aos="flip-left" >
+			<div class="col-md-4 col-sm-4 col-xs-6 services-grid bottom-grids"
+				data-aos="flip-left">
 				<span class="glyphicon glyphicon-globe effect-1" aria-hidden="true"></span>
 				<h5>Soluta nobis cum</h5>
 				<p>Itaque earum rerum hic a sapiente delectus in auctor sapien.</p>
 			</div>
-			<div class="col-md-4 col-sm-4 col-xs-6 services-grid bottom-grids" data-aos="fade-left">
+			<div class="col-md-4 col-sm-4 col-xs-6 services-grid bottom-grids"
+				data-aos="fade-left">
 				<span class="glyphicon glyphicon-cutlery effect-1"
 					aria-hidden="true"></span>
 				<h5>Vum nobis soluta</h5>
 				<p>Itaque earum rerum hic a sapiente delectus in auctor sapien.</p>
 			</div>
-			<div class="col-md-4 col-sm-4 col-xs-6 services-grid bottom-grids" data-aos="flip-left" >
+			<div class="col-md-4 col-sm-4 col-xs-6 services-grid bottom-grids"
+				data-aos="flip-left">
 				<span class="glyphicon glyphicon-th-large effect-1"
 					aria-hidden="true"></span>
 				<h5>Nobis cum soluta</h5>
@@ -366,14 +387,12 @@
 
 
 	<!-- <!-- 	building -->
-	-->
 	<!-- 	<div data-jarallax-element="430" data-aos="fade-up" -->
 	<!-- 		data-aos-duration="3000" class="fx"> -->
 	<!-- 		<img -->
 	<%-- 			src="${pageContext.request.contextPath}/images/building_PNG24561.png"> --%>
 	<!-- 	</div> -->
 	<!-- <!-- 	building -->
-	-->
 
 
 
@@ -386,7 +405,6 @@
 	<%-- 			style="background-image: url(${pageContext.request.contextPath}/images/image1.jpg); height:500px;"></div> --%>
 	<!-- 	</div> -->
 	<!-- 	<!-- .pogoSlider -->
-	-->
 	<script>
 		AOS.init({
 			duration : 3000,
