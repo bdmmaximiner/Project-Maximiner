@@ -73,6 +73,8 @@
 <!-- Include it if you want to parallax any element -->
 <script
 	src="https://unpkg.com/jarallax@1.10/dist/jarallax-element.min.js"></script>
+<script
+	src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0/dist/smooth-scroll.polyfills.min.js"></script>
 <!-- JS -->
 </head>
 <body>
@@ -80,12 +82,13 @@
 	<div class="w3ls-nav">
 		<nav class="cd-vertical-nav">
 			<ul>
-				<li><a href="#home" class="active"><span class="w3label">Home</span></a></li>
-				<li><a href="#about"><span class="w3label">About</span></a></li>
-				<li><a href="#services"><span class="w3label">Services</span></a></li>
+				<li><a data-scroll href="#home" class="active"><span
+						class="w3label">Home</span></a></li>
+				<li><a data-scroll href="#about"><span class="w3label">About</span></a></li>
+				<li><a data-scroll href="#services"><span class="w3label">Services</span></a></li>
 				<li><a href="#portfolio"><span class="w3label">Portfolio</span></a></li>
 				<li><a href="#blog"><span class="w3label">Blog</span></a></li>
-				<li><a href="#contact"><span class="w3label">Contact</span></a></li>
+				<li><a data-scroll href="#contact"><span class="w3label">Contact</span></a></li>
 			</ul>
 		</nav>
 	</div>
@@ -107,7 +110,7 @@
 		</div>
 	</div>
 	<!----for image scrolling-->
-	<div id="imgscr" class="banner" data-aos="zoom-out-up"
+	<div id="home" class="banner home" data-aos="zoom-out-up"
 		data-aos-duration="1000">
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
 			<!-- Wrapper for slides -->
@@ -267,7 +270,7 @@
 
 	<!-- 	stats -->
 
-	<div class="container">
+	<div class="container" id=services>
 		<div class="agileits-hdng">
 			<h3 class="w3stitle" data-aos="zoom-in">
 				<span>Services</span>
@@ -278,8 +281,7 @@
 				class="col-md-4 col-sm-4 col-xs-6 services-grid agileits-w3layouts"
 				data-aos="flip-left">
 				<span class="glyphicon glyphicon-home effect-1" aria-hidden="true"></span>
-				<h5>Appartment
-</h5>
+				<h5>Appartment</h5>
 				<p>We provide Appartments at your prefered location..</p>
 			</div>
 			<div
@@ -287,8 +289,7 @@
 				data-aos="fade-right">
 				<span class="glyphicon glyphicon-list-alt effect-1"
 					aria-hidden="true"></span>
-				<h5>Individual Home
-</h5>
+				<h5>Individual Home</h5>
 				<p>Get your dream Individual home at your prefered Location..</p>
 			</div>
 			<div
@@ -297,29 +298,27 @@
 				<span class="glyphicon glyphicon-tree-deciduous effect-1"
 					aria-hidden="true"></span>
 				<h5>Interrior Design</h5>
-				<p>Decore your home with better planning and Build your dream home with us..</p>
+				<p>Decore your home with better planning and Build your dream
+					home with us..</p>
 			</div>
 			<div class="col-md-4 col-sm-4 col-xs-6 services-grid bottom-grids"
 				data-aos="flip-left">
 				<span class="glyphicon glyphicon-globe effect-1" aria-hidden="true"></span>
-				<h5>Open Land
-</h5>
+				<h5>Open Land</h5>
 				<p>Bye your own land and build your dream home with Us..</p>
 			</div>
 			<div class="col-md-4 col-sm-4 col-xs-6 services-grid bottom-grids"
 				data-aos="fade-left">
 				<span class="glyphicon glyphicon-cutlery effect-1"
 					aria-hidden="true"></span>
-				<h5>Hotels
-</h5>
+				<h5>Hotels</h5>
 				<p>We also design hotels and many more thing at best price..</p>
 			</div>
 			<div class="col-md-4 col-sm-4 col-xs-6 services-grid bottom-grids"
 				data-aos="flip-left">
 				<span class="glyphicon glyphicon-th-large effect-1"
 					aria-hidden="true"></span>
-				<h5>Architecture
-</h5>
+				<h5>Architecture</h5>
 				<p>We have best architectute with us to design your dream</p>
 			</div>
 			<div class="clearfix"></div>
@@ -352,7 +351,7 @@
 				<div class="col-md-6 col-sm-6 contact-w3lsright"
 					data-aos="flip-right">
 					<h6>
-						<span>Making your space truly yours... </span>Feel free to get in touch with us if we have a new project or simply something awesome
+						<span>Making your space truly yours...</span>Feel free to get in touch with us if we have a new project or simply something awesome
 					</h6>
 					<div class="address-row">
 						<div class="col-xs-2 address-left">
@@ -444,6 +443,9 @@
 				return false
 			});
 		});
+	</script>
+	<script>
+		var scroll = new SmoothScroll('a[href*="#"]');
 	</script>
 </body>
 </html>
