@@ -107,7 +107,8 @@
 		</div>
 	</div>
 	<!----for image scrolling-->
-	<div id="imgscr" class="banner">
+	<div id="imgscr" class="banner" data-aos="zoom-out-up"
+		data-aos-duration="1000">
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
 			<!-- Wrapper for slides -->
 			<div id="car" class="carousel-inner">
@@ -183,11 +184,12 @@
 	<div id="about" class="about cd-section">
 		<div class="container">
 			<div class="col-md-6 about-w3lleft">
-				<h3 class="w3stitle" style="color: #FF4500;">
+				<h3 class="w3stitle" style="color: #FF4500;" data-aos="zoom-out-up"
+					data-aos-duration="500">
 					<span>About us</span>
 				</h3>
-				<h4>Why Us??????</h4>
-				<p>
+				<h4 data-aos="flip-left" data-aos-duration="1000">Why Us??????</h4>
+				<p data-aos="flip-up" data-aos-duration="1000">
 					With award-winning residential, commercial and leisure properties
 					across the South, to date, We delivered over 20,230 homes and has a
 					development portfolio of more than 44,000 units at various stages
@@ -201,10 +203,9 @@
 					that include.
 				</p>
 				<a href="#myModal" class="wthree-btn" data-toggle="modal"
-					style="color: #32CD32;"><font color="#FF4500;">Read more
-				</font><span></span></a>
+					style="color: #32CD32;"><font color="green">Read more </font><span></span></a>
 			</div>
-			<div class="col-md-6 about-w3lright">
+			<div class="col-md-6 about-w3lright" data-aos="zoom-in-down">
 				<img src="${pageContext.request.contextPath}/images/img1.jpg"
 					class="img-responsive" alt=" " style="width: 500px; height: 300px;">
 				<img src="${pageContext.request.contextPath}/images/img2.jpg"
@@ -277,44 +278,49 @@
 				class="col-md-4 col-sm-4 col-xs-6 services-grid agileits-w3layouts"
 				data-aos="flip-left">
 				<span class="glyphicon glyphicon-home effect-1" aria-hidden="true"></span>
-				<h5>Cum soluta nobis</h5>
-				<p>Itaque earum rerum hic a sapiente delectus in auctor sapien.</p>
+				<h5>Appartment
+</h5>
+				<p>We provide Appartments at your prefered location..</p>
 			</div>
 			<div
 				class="col-md-4 col-sm-4 col-xs-6 services-grid agileits-w3layouts"
 				data-aos="fade-right">
 				<span class="glyphicon glyphicon-list-alt effect-1"
 					aria-hidden="true"></span>
-				<h5>Soluta vum nobis</h5>
-				<p>Itaque earum rerum hic a sapiente delectus in auctor sapien.</p>
+				<h5>Individual Home
+</h5>
+				<p>Get your dream Individual home at your prefered Location..</p>
 			</div>
 			<div
 				class="col-md-4 col-sm-4 col-xs-6 services-grid agileits-w3layouts"
 				data-aos="flip-right">
 				<span class="glyphicon glyphicon-tree-deciduous effect-1"
 					aria-hidden="true"></span>
-				<h5>Nobis cum soluta</h5>
-				<p>Itaque earum rerum hic a sapiente delectus in auctor sapien.</p>
+				<h5>Interrior Design</h5>
+				<p>Decore your home with better planning and Build your dream home with us..</p>
 			</div>
 			<div class="col-md-4 col-sm-4 col-xs-6 services-grid bottom-grids"
 				data-aos="flip-left">
 				<span class="glyphicon glyphicon-globe effect-1" aria-hidden="true"></span>
-				<h5>Soluta nobis cum</h5>
-				<p>Itaque earum rerum hic a sapiente delectus in auctor sapien.</p>
+				<h5>Open Land
+</h5>
+				<p>Bye your own land and build your dream home with Us..</p>
 			</div>
 			<div class="col-md-4 col-sm-4 col-xs-6 services-grid bottom-grids"
 				data-aos="fade-left">
 				<span class="glyphicon glyphicon-cutlery effect-1"
 					aria-hidden="true"></span>
-				<h5>Vum nobis soluta</h5>
-				<p>Itaque earum rerum hic a sapiente delectus in auctor sapien.</p>
+				<h5>Hotels
+</h5>
+				<p>We also design hotels and many more thing at best price..</p>
 			</div>
 			<div class="col-md-4 col-sm-4 col-xs-6 services-grid bottom-grids"
 				data-aos="flip-left">
 				<span class="glyphicon glyphicon-th-large effect-1"
 					aria-hidden="true"></span>
-				<h5>Nobis cum soluta</h5>
-				<p>Itaque earum rerum hic a sapiente delectus in auctor sapien.</p>
+				<h5>Architecture
+</h5>
+				<p>We have best architectute with us to design your dream</p>
 			</div>
 			<div class="clearfix"></div>
 		</div>
@@ -324,12 +330,13 @@
 	<div id="contact" class="contact cd-section">
 		<div class="container">
 			<div class="agileits-hdng">
-				<h3 class="w3stitle">
+				<h3 class="w3stitle" data-aos="zoom-in-down">
 					<span>Contact us</span>
 				</h3>
 			</div>
 			<div class="contact-row agileits-w3layouts">
-				<div class="col-md-6 col-sm-6 contact-w3lsleft">
+				<div class="col-md-6 col-sm-6 contact-w3lsleft"
+					data-aos="zoom-in-right">
 					<div class="contact-grid agileits">
 						<h4>DROP US A LINE</h4>
 						<form action="#" method="post">
@@ -342,7 +349,8 @@
 						</form>
 					</div>
 				</div>
-				<div class="col-md-6 col-sm-6 contact-w3lsright">
+				<div class="col-md-6 col-sm-6 contact-w3lsright"
+					data-aos="flip-right">
 					<h6>
 						<span>Sed interdum </span>interdum accumsan nec purus ac orci
 						finibus facilisis. In sit amet placerat nisl in auctor sapien.
