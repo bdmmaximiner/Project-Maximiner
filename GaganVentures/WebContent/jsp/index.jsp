@@ -107,17 +107,17 @@
 			<!-- Wrapper for slides -->
 			<div id="car" class="carousel-inner">
 				<div class="item active">
-					<img src="${pageContext.request.contextPath}/images/h2.jpg"
+					<img src="${pageContext.request.contextPath}/images/wwe1.jpg"
 						alt="picture1" style="width: 1450px; height: 700px;">
 				</div>
 
 				<div class="item">
-					<img src="${pageContext.request.contextPath}/images/g3.jpg"
+					<img src="${pageContext.request.contextPath}/images/w1.jpg"
 						alt="picture2" style="width: 1450px; height: 700px;">
 				</div>
 
 				<div class="item">
-					<img src="${pageContext.request.contextPath}/images/ho1.jpg"
+					<img src="${pageContext.request.contextPath}/images/web3.jpg"
 						alt="picture3" style="width: 1450px; height: 700px;">
 				</div>
 			</div>
@@ -174,36 +174,26 @@
 	<!-- main -->
 
 	<!-- 	About US -->
-	<div class="container jarallax">
-		<div class=row>
-			<div class="box col-lg-6">
-				<h3 class="About">
-					<span>About us</span>
-				</h3>
-				<h4>
-					<span>Content Header</span>
-				</h4>
-				<p>
-					<span>Real estate is "property consisting of land and the
-						buildings on it, along with its natural resources such as crops,
-						minerals or water; immovable property of this nature; an interest
-						vested in this (also) an item of real property, (more generally)
-						buildings or housing in generalReal estate is "property consisting
-						of land and the buildings on it, along with its natural resources
-						such as crops, minerals or water; immovable property of this
-						nature; an interest vested in this (also) an item of real
-						property, (more generally) buildings or housing in general.Real
-						estate is "property consisting of land and the buildings on it,
-						along with its natural resources such as crops, minerals or water;
-						immovable property of this nature; an interest vested in this
-						(also) an item of real property, (more generally) buildings or
-						housing in general</span>
-				</p>
-			</div>
+	<!-- about -->
+	<div id="about" class="about cd-section">  
+		<div class="container">  
+			<div class="col-md-6 about-w3lleft"> 
+				<h3 class="w3stitle" style="color:#FF4500;"><span>About us</span></h3>
+				<h4>Why Us??????</h4>
+				<p>With award-winning residential, commercial and leisure properties across the South, to date, We delivered over 20,230 homes and has a development portfolio of more than 44,000 units at various stages of planning and progress, asserting its place as a leading luxury developer in the region.*<br>
 
-			<div class="box2 col-lg-6"></div>
+                Join Our family and experience a luxurious lifestyle designed to give you the ultimate sense of comfort.<br>
+				Joining forces with some of the world’s most eminent fashion and lifestyle brands, We brought new and exciting living concepts to the market in collaborations that include.</p>
+				<a href="#myModal" class="wthree-btn" data-toggle="modal" style="color:#32CD32;"><font color="#FF4500;">Read more </font><span></span></a> 
+			</div> 
+			<div class="col-md-6 about-w3lright">
+				<img src="${pageContext.request.contextPath}/images/img1.jpg" class="img-responsive" alt=" " style="width: 500px;height: 300px;"> 
+				<img src="${pageContext.request.contextPath}/images/img2.jpg" class="img-responsive about-w3lright-img2" alt=" " style="width: 500px;height: 300px;"> 
+			</div>
+			<div class="clearfix"> </div> 
 		</div>
 	</div>
+	<!-- //about -->
 	<!-- 	About US -->
 
 
