@@ -326,7 +326,7 @@
 	</div>
 
 
-	<div id="contact" class="contact cd-section">
+	<div id="contact" class="contact cd-section">;
 		<div class="container">
 			<div class="agileits-hdng">
 				<h3 class="w3stitle" data-aos="zoom-in-down">
