@@ -153,9 +153,9 @@
 				</div>
 			</div>
 
-			<div  id="back_opacity">
+			<div id="back_opacity">
 				<div class="row">
-					<div class="col-sm-4"	>
+					<div class="col-sm-4">
 						<i class="fa fa-map-marker" aria-hidden="true">BANGALORE,INDIA</i>
 					</div>
 					<div class="col-sm-4">
@@ -170,8 +170,44 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<!-- main -->
+
+	<!-- 	About US -->
+	<div class="container jarallax">
+		<div class=row>
+			<div class="box col-lg-6">
+				<h3 class="About">
+					<span>About us</span>
+				</h3>
+				<h4>
+					<span>Content Header</span>
+				</h4>
+				<p>
+					<span>Real estate is "property consisting of land and the
+						buildings on it, along with its natural resources such as crops,
+						minerals or water; immovable property of this nature; an interest
+						vested in this (also) an item of real property, (more generally)
+						buildings or housing in generalReal estate is "property consisting
+						of land and the buildings on it, along with its natural resources
+						such as crops, minerals or water; immovable property of this
+						nature; an interest vested in this (also) an item of real
+						property, (more generally) buildings or housing in general.Real
+						estate is "property consisting of land and the buildings on it,
+						along with its natural resources such as crops, minerals or water;
+						immovable property of this nature; an interest vested in this
+						(also) an item of real property, (more generally) buildings or
+						housing in general</span>
+				</p>
+			</div>
+
+			<div class="box2 col-lg-6"></div>
+		</div>
+	</div>
+	<!-- 	About US -->
+
+
+
 	<!-- 	stats -->
 	<div class="jumbotron jarallax" data-jarallax data-speed="0.6">
 		<div class=container>
