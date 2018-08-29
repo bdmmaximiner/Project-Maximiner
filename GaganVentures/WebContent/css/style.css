@@ -368,7 +368,7 @@ h5.w3ls-featext {
 }
 
 .effect-1 {
-	background: #f7542b;
+	background: green;
 	-webkit-transition: background 0.5s, color 0.2s;
 	-moz-transition: background 0.5s, color 0.2s;
 	transition: background 0.5s, color 0.2s;
@@ -378,7 +378,7 @@ h5.w3ls-featext {
 	top: -7px;
 	left: -7px;
 	padding: 7px;
-	box-shadow: 0 0 10px 3px #f7542b;
+	box-shadow: 0 0 10px 3px green;
 	-webkit-transition: -webkit-transform 0.5s, opacity 0.2s;
 	-webkit-transform: scale(0.8);
 	-moz-transition: -moz-transform 0.5s, opacity 0.2s;
@@ -1730,8 +1730,8 @@ i.fa {
 }
 
 /*-- //stats --*/
-.jumbotron {
-	background: url(../images/image8.jpg) no-repeat 0px 0px;
+.stat {
+	background: url(../images/image12.jpg) no-repeat 0px 0px;
 }
 
 #show {

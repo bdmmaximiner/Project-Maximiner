@@ -47,8 +47,13 @@
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript"
-	src="${pageContext.request.contextPath}/js/jquery.pogo-slider.js"></script>
+
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+	s
+	<script type="text/javascript"
+	src="${pageContext.request.contextPath}/js/jquery.pogo-slider.js">
+</script>
 <script type="text/javascript"
 	src="${pageContext.request.contextPath}/js/main.js"></script>
 <script type="text/javascript"
@@ -124,6 +129,7 @@
 
 			<!----linked to javascript-->
 			<div id="text" class="centered">GAGAN VENTURES</div>
+
 			<button type="button" class="btn " data-toggle="modal"
 				data-target="#myModal">Read More...</button>
 
@@ -174,7 +180,7 @@
 	<!-- main -->
 
 	<!-- 	About US -->
-	<div class="container jarallax">
+	<div class="jumbotron">
 		<div class=row>
 			<div class="box col-lg-6">
 				<h3 class="About">
@@ -209,7 +215,7 @@
 
 
 	<!-- 	stats -->
-	<div class="jumbotron jarallax" data-jarallax data-speed="0.6">
+	<div class="jumbotron jarallax stat" data-jarallax data-speed="0.6">
 		<div class=container>
 			<div class=row>
 				<div class="col-sm-3 stats-grid" data-aos="fade-down-right">
@@ -254,11 +260,133 @@
 	</div>
 
 	<!-- 	stats -->
-	<div data-jarallax-element="430" data-aos="fade-up"
-		data-aos-duration="3000" class="fx">
-		<img
-			src="${pageContext.request.contextPath}/images/building_PNG24561.png">
+
+	<div class="container">
+		<div class="agileits-hdng">
+			<h3 class="w3stitle" data-aos="zoom-in">
+				<span>Services</span>
+			</h3>
+		</div>
+		<div class="services-w3ls-row">
+			<div
+				class="col-md-4 col-sm-4 col-xs-6 services-grid agileits-w3layouts" data-aos="flip-left" >
+				<span class="glyphicon glyphicon-home effect-1" aria-hidden="true"></span>
+				<h5>Cum soluta nobis</h5>
+				<p>Itaque earum rerum hic a sapiente delectus in auctor sapien.</p>
+			</div>
+			<div
+				class="col-md-4 col-sm-4 col-xs-6 services-grid agileits-w3layouts" data-aos="fade-right" >
+				<span class="glyphicon glyphicon-list-alt effect-1"
+					aria-hidden="true"></span>
+				<h5>Soluta vum nobis</h5>
+				<p>Itaque earum rerum hic a sapiente delectus in auctor sapien.</p>
+			</div>
+			<div
+				class="col-md-4 col-sm-4 col-xs-6 services-grid agileits-w3layouts" data-aos="flip-right" >
+				<span class="glyphicon glyphicon-tree-deciduous effect-1"
+					aria-hidden="true"></span>
+				<h5>Nobis cum soluta</h5>
+				<p>Itaque earum rerum hic a sapiente delectus in auctor sapien.</p>
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-6 services-grid bottom-grids" data-aos="flip-left" >
+				<span class="glyphicon glyphicon-globe effect-1" aria-hidden="true"></span>
+				<h5>Soluta nobis cum</h5>
+				<p>Itaque earum rerum hic a sapiente delectus in auctor sapien.</p>
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-6 services-grid bottom-grids" data-aos="fade-left">
+				<span class="glyphicon glyphicon-cutlery effect-1"
+					aria-hidden="true"></span>
+				<h5>Vum nobis soluta</h5>
+				<p>Itaque earum rerum hic a sapiente delectus in auctor sapien.</p>
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-6 services-grid bottom-grids" data-aos="flip-left" >
+				<span class="glyphicon glyphicon-th-large effect-1"
+					aria-hidden="true"></span>
+				<h5>Nobis cum soluta</h5>
+				<p>Itaque earum rerum hic a sapiente delectus in auctor sapien.</p>
+			</div>
+			<div class="clearfix"></div>
+		</div>
 	</div>
+
+
+	<div id="contact" class="contact cd-section">
+		<div class="container">
+			<div class="agileits-hdng">
+				<h3 class="w3stitle">
+					<span>Contact us</span>
+				</h3>
+			</div>
+			<div class="contact-row agileits-w3layouts">
+				<div class="col-md-6 col-sm-6 contact-w3lsleft">
+					<div class="contact-grid agileits">
+						<h4>DROP US A LINE</h4>
+						<form action="#" method="post">
+							<input type="text" name="Name" placeholder="Name" required>
+							<input type="email" name="Email" placeholder="Email" required>
+							<input type="text" name="Phone Number" placeholder="Phone Number"
+								required>
+							<textarea name="Message" placeholder="Message..." required></textarea>
+							<input type="submit" value="Submit">
+						</form>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-6 contact-w3lsright">
+					<h6>
+						<span>Sed interdum </span>interdum accumsan nec purus ac orci
+						finibus facilisis. In sit amet placerat nisl in auctor sapien.
+					</h6>
+					<div class="address-row">
+						<div class="col-xs-2 address-left">
+							<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+						</div>
+						<div class="col-xs-10 address-right">
+							<h5>Visit Us</h5>
+							<p>Broome St, Canada, NY 10002, New York</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="address-row w3-agileits">
+						<div class="col-xs-2 address-left">
+							<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+						</div>
+						<div class="col-xs-10 address-right">
+							<h5>Mail Us</h5>
+							<p>
+								<a href="mailto:info@example.com"> mail@example.com</a>
+							</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="address-row">
+						<div class="col-xs-2 address-left">
+							<span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
+						</div>
+						<div class="col-xs-10 address-right">
+							<h5>Call Us</h5>
+							<p>+01 222 333 4444</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- <!-- 	building -->
+	-->
+	<!-- 	<div data-jarallax-element="430" data-aos="fade-up" -->
+	<!-- 		data-aos-duration="3000" class="fx"> -->
+	<!-- 		<img -->
+	<%-- 			src="${pageContext.request.contextPath}/images/building_PNG24561.png"> --%>
+	<!-- 	</div> -->
+	<!-- <!-- 	building -->
+	-->
+
+
+
 	<!-- 	<div class="pogoSlider" id="demo1">> -->
 	<%-- 		<div class="pogoSlider-slide" style="background-image: url(${pageContext.request.contextPath}/images/image2.jpg); height:500px;"> --%>
 	<!-- 		</div> -->
@@ -271,9 +399,36 @@
 	-->
 	<script>
 		AOS.init({
-			duration : 2000,
+			duration : 3000,
 		});
 	</script>
-
+	<script>
+		$(function() {
+			$('.wthree-btn').on(
+					'mouseenter',
+					function(e) {
+						var parentOffset = $(this).offset(), relX = e.pageX
+								- parentOffset.left, relY = e.pageY
+								- parentOffset.top;
+						$(this).find('span').css({
+							top : relY,
+							left : relX
+						})
+					}).on(
+					'mouseout',
+					function(e) {
+						var parentOffset = $(this).offset(), relX = e.pageX
+								- parentOffset.left, relY = e.pageY
+								- parentOffset.top;
+						$(this).find('span').css({
+							top : relY,
+							left : relX
+						})
+					});
+			$('[href=#]').click(function() {
+				return false
+			});
+		});
+	</script>
 </body>
 </html>
