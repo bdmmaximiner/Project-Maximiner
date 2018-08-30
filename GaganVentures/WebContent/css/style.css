@@ -40,7 +40,7 @@ body a:focus {
 }
 /*-- banner --*/
 .w3ls-banner {
-	background: url(../images/1.jpg) no-repeat center 0px;
+	background: url(../images/h1.jpg) no-repeat center 0px;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -419,7 +419,7 @@ h5.w3ls-featext {
 /*-- //services --*/
 /*-- portfolio --*/
 .portfolio {
-	background: #ececec;
+	background: #1bef4b;
 }
 
 .portfolio h3.w3stitle span {
@@ -750,9 +750,11 @@ ul.simplefilter {
 /*-- //blog --*/
 /*-- subscribe --*/
 .subscribe-agileinfo {
-	background: url(../images/1.jpg) no-repeat center bottom fixed;
+	background: url(../images/1.jpg) no-repeat 0px 0px;
 	background-size: cover;
-	text-align: center;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .wthree-sub h4 {
@@ -1809,9 +1811,9 @@ i.fa {
 	-webkit-border-radius: 60%;
 	-moz-border-radius: 50%;
 	border-radius: 80%;
-	-webkit-box-shadow: 0px 0px 1px 0px  #f7542b;
-	-moz-box-shadow: 0px 0px 1px 0px  #f7542b;
-	box-shadow: 0px 0px 1px 0px  #f7542b;
+	-webkit-box-shadow: 0px 0px 1px 0px #f7542b;
+	-moz-box-shadow: 0px 0px 1px 0px #f7542b;
+	box-shadow: 0px 0px 1px 0px #f7542b;
 	width: 35px;
 	height: 35px;
 	margin: 10px;
@@ -1820,7 +1822,7 @@ i.fa {
 
 #social a:hover {
 	color: black;
-	box-shadow: 0px 0px 13px 2px  #f7542b;
+	box-shadow: 0px 0px 13px 2px #f7542b;
 }
 
 #social a {
@@ -1911,3 +1913,33 @@ h4 span {
 	width: 630px;
 	height: 600px;
 }
+
+a.swipebox {
+	margin: 10px;
+}
+
+.odometer {
+	font-size: 35px;
+	color: white;
+}
+
+
+/* maps */
+.mapouter {
+	text-align: right;
+	height: 392px;
+	width: 100%;
+}
+
+.gmap_canvas {
+	overflow: hidden;
+	background: none !important;
+	height: 392px;
+	width: 100%;
+	border-color: green;
+	border-width: 30px;
+	box-sizing: border-box;
+    border: 5px solid red;
+    float: left;
+}
+/* maps */

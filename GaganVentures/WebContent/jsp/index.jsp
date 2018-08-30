@@ -22,7 +22,7 @@
 <link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/css/cdnav.css">
 <link rel="stylesheet" type="text/css"
-	href="${pageContext.request.contextPath}/css/odometer-theme-train-station.css">
+	href="${pageContext.request.contextPath}/css/odometer-theme-default.css">
 <script type="text/javascript"
 	src="${pageContext.request.contextPath}/css/aos.css"></script>
 <script type="text/javascript"
@@ -334,14 +334,14 @@
 				<div class="col-md-6 col-sm-6 contact-w3lsleft"
 					data-aos="zoom-in-right">
 					<div class="contact-grid agileits">
-						<h4>DROP US A LINE</h4>
+						<h4>BOOK A PROJECT WITH US</h4>
 						<form action="#" method="post">
 							<input type="text" name="Name" placeholder="Name" required>
 							<input type="email" name="Email" placeholder="Email" required>
 							<input type="text" name="Phone Number" placeholder="Phone Number"
 								required>
 							<textarea name="Message" placeholder="Message..." required></textarea>
-							<input type="submit" value="Submit">
+							<input type="submit" value="BOOK">
 						</form>
 					</div>
 				</div>
@@ -386,6 +386,36 @@
 				</div>
 				<div class="clearfix"></div>
 			</div>
+		</div>
+	</div>
+
+
+	<div class="wthree-sub" data-aos="fade-up"
+		data-aos-anchor-placement="bottom-bottom" data-aos-duration="500">
+		<div class="container">
+			<h4>Subscribe</h4>
+			<form action="#" method="post">
+				<input type="email" name="email" placeholder="Enter your Email..."
+					required> <input type="submit" value="Submit">
+				<div class="clearfix"></div>
+			</form>
+			<div class="w3social-icons w3sub-agileits-icons">
+				<ul>
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="mapouter" data-aos="zoom-in-up" data-aos-duration="1000">
+		<div class="gmap_canvas">
+			<iframe width="100%" height="392" id="gmap_canvas"
+				src="https://maps.google.com/maps?q=maximiner&t=&z=17&ie=UTF8&iwloc=&output=embed"></iframe>
+			<a href="https://www.pureblack.de">internetagentur</a>
 		</div>
 	</div>
 
