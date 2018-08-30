@@ -219,9 +219,6 @@
 	</div>
 	<!-- //about -->
 	<!-- 	About US -->
-
-
-
 	<!-- 	stats -->
 	<div class="jumbotron jarallax stat" data-jarallax data-speed="0.6">
 		<div class=container>
