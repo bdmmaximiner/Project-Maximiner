@@ -82,8 +82,7 @@
 	<div class="w3ls-nav">
 		<nav class="cd-vertical-nav">
 			<ul>
-				<li><a data-scroll href="#home" class="active"><span
-						class="w3label">Home</span></a></li>
+				<li><a data-scroll href="#home"><span class="w3label">Home</span></a></li>
 				<li><a data-scroll href="#about"><span class="w3label">About</span></a></li>
 				<li><a data-scroll href="#services"><span class="w3label">Services</span></a></li>
 				<li><a href="#portfolio"><span class="w3label">Portfolio</span></a></li>
@@ -324,8 +323,9 @@
 			<div class="clearfix"></div>
 		</div>
 	</div>
+	<div id=portfolio></div>
 
-
+	<div id=blog></div>
 	<div id="contact" class="contact cd-section">
 		<div class="container">
 			<div class="agileits-hdng">
