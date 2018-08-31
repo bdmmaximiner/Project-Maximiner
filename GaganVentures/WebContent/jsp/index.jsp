@@ -97,7 +97,7 @@
 	<div id="id2" class="container-fluid">
 		<div class="row">
 			<div class="col-sm-4">
-				<img src="${pageContext.request.contextPath}/images/logo1.png">
+				<img src="${pageContext.request.contextPath}/images/GV.png">
 			</div>
 			<div class="col-sm-8">
 				<div class="nav navbar-nav navbar-right" id="social">
@@ -320,9 +320,134 @@
 			<div class="clearfix"></div>
 		</div>
 	</div>
-	<div id=portfolio></div>
 
-	<div id=blog></div>
+	<div class="container" id="portfolio">
+		<div class="agileits-hdng">
+			<h3 class="w3stitle" data-aos="zoom-in-down">
+				<span>Gallery</span>
+			</h3>
+		</div>
+		<div class="row">
+			<div class="col-sm-4" data-aos="zoom-in" data-aos-duration="1000">
+				<div class="hovereffect">
+					<img src="${pageContext.request.contextPath}/images/homee.jpg"
+						alt="">
+					<div class="overlay">
+						<h2>Individual Home</h2>
+						<a class="info"
+							href="${pageContext.request.contextPath}/images/homee.jpg">VIEW</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4" data-aos="zoom-in-up" data-aos-duration="1000">
+				<div class="hovereffect">
+					<img src="${pageContext.request.contextPath}/images/homee.jpg"
+						alt="">
+					<div class="overlay">
+						<h2>Appartment</h2>
+						<a class="info"
+							href="${pageContext.request.contextPath}/images/homee.jpg">VIEW</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4" data-aos="zoom-in" data-aos-duration="1000">
+				<div class="hovereffect">
+					<img src="${pageContext.request.contextPath}/images/homee.jpg"
+						alt="">
+					<div class="overlay">
+						<h2>Interiors</h2>
+						<a class="info"
+							href="${pageContext.request.contextPath}/images/homee.jpg">VIEW</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="blog" class="blog cd-section">
+		<div class="container">
+			<div class="agileits-hdng">
+				<h3 class="w3stitle" style="color:black;">
+					<span>Our Blog</span>
+				</h3>
+			</div>
+			<div class="blog-agileinfo">
+				<div class="col-md-7 blog-w3grid-img">
+					<a href="#myModal" data-toggle="modal" class="wthree-blogimg">
+						<img src="${pageContext.request.contextPath}/images/h1.jpg" class="img-responsive" alt="">
+					</a>
+				</div>
+				<div class="col-md-5 blog-w3grid-text">
+					<h4>
+						<a href="#myModal" data-toggle="modal" style="color: #32CD32;">Home
+							Ready to sold</a>
+					</h4>
+					<h6>
+						<a href="#">By Admin</a> - Jan 25th, 2018
+					</h6>
+					<p>
+						Join Our family and experience a luxurious lifestyle designed to
+						give you the ultimate sense of comfort.<br> Joining forces
+						with some of the world’s most eminent fashion and lifestyle
+						brands, We brought new and exciting living concepts to the market
+						in collaborations that include.
+					</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="blog-agileinfo blog-agileinfo-mdl">
+				<div class="col-md-7 blog-w3grid-img blog-img-rght">
+					<a href="#myModal" data-toggle="modal" class="wthree-blogimg">
+						<img src="images/img5.jpg" class="img-responsive" alt="">
+					</a>
+				</div>
+				<div class="col-md-5 blog-w3grid-text">
+					<h4>
+						<a href="#myModal" data-toggle="modal" style="color: #32CD32;">Furnished
+							Appartment</a>
+					</h4>
+					<h6>
+						<a href="#">By Admin</a> - Feb 12th, 2018
+					</h6>
+					<p>
+						Join Our family and experience a luxurious lifestyle designed to
+						give you the ultimate sense of comfort.<br> Joining forces
+						with some of the world’s most eminent fashion and lifestyle
+						brands, We brought new and exciting living concepts to the market
+						in collaborations that include.
+					</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="blog-agileinfo">
+				<div class="col-md-7 blog-w3grid-img">
+					<a href="#myModal" data-toggle="modal" class="wthree-blogimg">
+						<img src="images/img6.jpg" class="img-responsive" alt="">
+					</a>
+				</div>
+				<div class="col-md-5 blog-w3grid-text">
+					<h4>
+						<a href="#myModal" data-toggle="modal" style="color: #32CD32;">Land
+							for Sale</a>
+					</h4>
+					<h6>
+						<a href="#">By Admin</a> - Feb 25th, 2018
+					</h6>
+					<p>
+						Join Our family and experience a luxurious lifestyle designed to
+						give you the ultimate sense of comfort.<br> Joining forces
+						with some of the world’s most eminent fashion and lifestyle
+						brands, We brought new and exciting living concepts to the market
+						in collaborations that include.
+					</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+
+
 	<div id="contact" class="contact cd-section">
 		<div class="container">
 			<div class="agileits-hdng">
@@ -417,7 +542,10 @@
 				src="https://maps.google.com/maps?q=maximiner&t=&z=17&ie=UTF8&iwloc=&output=embed"></iframe>
 			<a href="https://www.pureblack.de">internetagentur</a>
 		</div>
+		
 	</div>
+	
+	
 
 
 	<!-- <!-- 	building -->
