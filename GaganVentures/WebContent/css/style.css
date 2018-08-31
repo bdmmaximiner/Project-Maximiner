@@ -2027,3 +2027,48 @@ a.swipebox {
   -ms-transform: scale(1);
   transform: scale(1);
 }
+
+h1
+{
+	text-align: center;
+	color: green;
+}
+#table
+{
+	background-color:#CFDDDF;
+	width:100%;
+}
+#table td img
+{
+		width:331px;
+	height:130px;
+	margin: 10px;
+	text-align: center;
+
+}
+#table td button
+{
+	color:#19B4CA;background-color: green;
+	padding:10px;
+	color:orange;
+	margin: 90px;
+	
+}
+#table th
+{
+	padding: 2px;
+}
+.class
+{
+	width:800px;
+	
+}
+.card-title
+{
+	color:orange;
+	padding: 10px	
+}
+.card-text
+{
+	height: 60px;
+}
