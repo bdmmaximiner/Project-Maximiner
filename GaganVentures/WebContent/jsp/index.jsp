@@ -363,8 +363,6 @@
 			</div>
 		</div>
 	</div>
-
-
 	<div id="blog" class="blog cd-section">
 		<div class="container">
 			<div class="agileits-hdng">
