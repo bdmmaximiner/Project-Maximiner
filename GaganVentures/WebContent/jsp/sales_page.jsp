@@ -20,21 +20,21 @@
 	<%@ page import="javax.servlet.http.HttpSession"%>
 
 	<table id="table">
-	<%
-		Connection con = null;
-		Statement stmt = null;
-		ResultSet rs = null;
+		<%
+			Connection con = null;
+			Statement stmt = null;
+			ResultSet rs = null;
 
-		try {
-			con = new OracalDatabaseConnect().Connect();
-			stmt = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
+			try {
+				con = new OracalDatabaseConnect().Connect();
+				stmt = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
 
-			rs = stmt.executeQuery("select * from SALES");
+				rs = stmt.executeQuery("select * from SALES");
 
-			while (rs.next()) {
-				System.out.println("h");
-	%>
-	
+				while (rs.next()) {
+					System.out.println("h");
+		%>
+
 		<tr>
 			<th><h1><%=rs.getString("HEADING")%></h1></th>
 			<td><img src=<%=rs.getString("IMAGE")%> /></td>

@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-  <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Gagan Ventures</title>
 <!-- css -->
@@ -36,11 +36,14 @@
 <link
 	href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
 	rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
-    <link rel="stylesheet" href="gallery-clean.css">
-     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700"
+	rel="stylesheet">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+<link rel="stylesheet" href="gallery-clean.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <!-- css	 -->
 
 <!-- JS -->
@@ -54,6 +57,8 @@
 <!-- Latest compiled JavaScript -->
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.3/jquery.flexslider-min.js"></script>
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -84,8 +89,9 @@
 	src="https://unpkg.com/jarallax@1.10/dist/jarallax-element.min.js"></script>
 <script
 	src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0/dist/smooth-scroll.polyfills.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
-	
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+
 <!-- JS -->
 </head>
 <body>
@@ -93,7 +99,7 @@
 	<div class="w3ls-nav">
 		<nav class="cd-vertical-nav">
 			<ul>
-				<li><a data-scroll href="#home"  ><span class="w3label">Home</span></a></li>
+				<li><a data-scroll href="#home"><span class="w3label">Home</span></a></li>
 				<li><a data-scroll href="#about"><span class="w3label">About</span></a></li>
 				<li><a data-scroll href="#services"><span class="w3label">Services</span></a></li>
 				<li><a data-scroll href="#gallery"><span class="w3label">Gallery</span></a></li>
@@ -108,9 +114,9 @@
 	<div id="id2" class="container-fluid">
 		<div class="row">
 			<div class="col-sm-4">
-				<img src="${pageContext.request.contextPath}/images/GV.png"  >
+				<img src="${pageContext.request.contextPath}/images/GV.png">
 			</div>
-			<div class="col-sm-8" >
+			<div class="col-sm-8">
 				<div class="nav navbar-nav navbar-right" id="social">
 					<a href="#" class="fa fa-google-plus"></a> <a href="#"
 						class="fa fa-twitter"></a> <a href="#" class="fa fa-skype"></a> <a
@@ -123,21 +129,21 @@
 	<div id="home" class="banner home" data-interval="1500">
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
 			<!-- Wrapper for slides -->
-			<div id="car" class="carousel-inner"  data-aos="slide-up"
-		data-aos-duration="1000">
-				<div class="item active" >
+			<div id="car" class="carousel-inner" data-aos="slide-up"
+				data-aos-duration="1000">
+				<div class="item active">
 					<img src="${pageContext.request.contextPath}/images/1.jpg"
-						alt="picture1" style="width: 1450px; height: 700px;" >
+						alt="picture1" style="width: 1450px; height: 700px;">
 				</div>
 
-				<div class="item" data-aos="slide-left"
-		data-aos-duration="1000" data-interval="1500">
+				<div class="item" data-aos="slide-left" data-aos-duration="1000"
+					data-interval="1500">
 					<img src="${pageContext.request.contextPath}/images/w1.jpg"
 						alt="picture2" style="width: 1450px; height: 700px;">
 				</div>
 
-				<div class="item"  data-aos="slide-right"
-		data-aos-duration="1000" data-interval="1500" >
+				<div class="item" data-aos="slide-right" data-aos-duration="1000"
+					data-interval="1500">
 					<img src="${pageContext.request.contextPath}/images/ga4.jpg"
 						alt="picture3" style="width: 1450px; height: 700px;">
 				</div>
@@ -147,7 +153,8 @@
 			<div id="text" class="centered">GAGAN VENTURES</div>
 
 			<button type="button" class="btn " data-toggle="modal"
-				data-target="#myModal1" style="font-size:17px;font-weight:bold;">Read More</button>
+				data-target="#myModal1" style="font-size: 17px; font-weight: bold;">Read
+				More</button>
 
 			<div class="modal fade" id="myModal1" role="dialog">
 				<div class="modal-dialog modal-lg" id="modal_wid">
@@ -155,7 +162,7 @@
 						<div class="modal-header">
 							<h4 class="modal-title">DISCOVER YOUR DREAM HOME WITH US</h4>
 							<button type="button" class="close" data-dismiss="modal">&times;</button>
-							
+
 						</div>
 						<div class="modal-body">
 							<div class="card" style="width: 400px; background-color: none;">
@@ -176,11 +183,13 @@
 				</div>
 			</div>
 
-			<div class="bnrwthree-address"> 
+			<div class="bnrwthree-address">
 				<ul>
 					<li><i class="fa fa-map-marker" aria-hidden="true"></i>BANGALORE,INDIA</li>
-					<li><i class="fa fa-phone" aria-hidden="true"> </i>  +91 111 222 3333</li>
-					<li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:info@example.com"> mail@example.com</a></li>
+					<li><i class="fa fa-phone" aria-hidden="true"> </i> +91 111
+						222 3333</li>
+					<li><i class="fa fa-envelope" aria-hidden="true"></i><a
+						href="mailto:info@example.com"> mail@example.com</a></li>
 				</ul>
 			</div>
 		</div>
@@ -192,8 +201,7 @@
 	<div id="about" class="about cd-section">
 		<div class="container">
 			<div class="col-md-6 about-w3lleft">
-				<h3 class="w3stitle" data-aos="zoom-in"
-					data-aos-duration="2000">
+				<h3 class="w3stitle" data-aos="zoom-in" data-aos-duration="2000">
 					<span>About us</span>
 				</h3>
 				<h4 data-aos="zoom-in" data-aos-duration="2000">Why Us??????</h4>
@@ -202,16 +210,16 @@
 					across the South, to date, We delivered over 20,230 homes and has a
 					development portfolio of more than 44,000 units at various stages
 					of planning and progress, asserting its place as a leading luxury
-					developer in the region.*. Join Our
-					family and experience a luxurious lifestyle designed to give you
-					the ultimate sense of comfort.<br> Joining forces with some of
-					the world’s most eminent fashion and lifestyle brands, We brought
-					new and exciting living concepts to the market in collaborations
-					that include.
+					developer in the region.*. Join Our family and experience a
+					luxurious lifestyle designed to give you the ultimate sense of
+					comfort.<br> Joining forces with some of the world’s most
+					eminent fashion and lifestyle brands, We brought new and exciting
+					living concepts to the market in collaborations that include.
 				</p>
-				
-				<a href="myModal1" class="wthree-btn" data-toggle="modal" data-target="myModal1"
-					style="color: #32CD32;"><font color="#FF4500">Read more </font><span></span></a>
+
+				<a href="myModal1" class="wthree-btn" data-toggle="modal"
+					data-target="myModal1" style="color: #32CD32;"><font
+					color="#FF4500">Read more </font><span></span></a>
 			</div>
 			<div class="col-md-6 about-w3lright" data-aos="zoom-in-down">
 				<img src="${pageContext.request.contextPath}/images/img1.jpg"
@@ -224,7 +232,7 @@
 		</div>
 	</div>
 	<!-- //about -->
-	
+
 	<!-- 	stats -->
 	<div class="jumbotron jarallax stat" data-jarallax data-speed="0.6">
 		<div class=container>
@@ -273,163 +281,182 @@
 	<!-- 	status -->
 
 	<div id=services class="services cd-section">
-	<div class="container">
-		<div class="agileits-hdng">
-			<h3 class="w3stitle" data-aos="zoom-in">
-				<span>Services</span>
-			</h3>
+		<div class="container">
+			<div class="agileits-hdng">
+				<h3 class="w3stitle" data-aos="zoom-in">
+					<span>Services</span>
+				</h3>
+			</div>
+			<div class="services-w3ls-row">
+				<div
+					class="col-md-4 col-sm-4 col-xs-6 services-grid agileits-w3layouts"
+					data-aos="flip-left">
+					<span class="glyphicon glyphicon-home effect-1" aria-hidden="true"></span>
+					<h5>Appartment</h5>
+					<p>We provide Appartments at your prefered location..</p>
+				</div>
+				<div
+					class="col-md-4 col-sm-4 col-xs-6 services-grid agileits-w3layouts"
+					data-aos="fade-right">
+					<span class="glyphicon glyphicon-list-alt effect-1"
+						aria-hidden="true"></span>
+					<h5>Individual Home</h5>
+					<p>Get your dream Individual home at your prefered Location..</p>
+				</div>
+				<div
+					class="col-md-4 col-sm-4 col-xs-6 services-grid agileits-w3layouts"
+					data-aos="flip-right">
+					<span class="glyphicon glyphicon-tree-deciduous effect-1"
+						aria-hidden="true"></span>
+					<h5>Interrior Design</h5>
+					<p>Decore your home with better planning and Build your dream
+						home with us..</p>
+				</div>
+				<div class="col-md-4 col-sm-4 col-xs-6 services-grid bottom-grids"
+					data-aos="flip-left">
+					<span class="glyphicon glyphicon-globe effect-1" aria-hidden="true"></span>
+					<h5>Open Land</h5>
+					<p>Bye your own land and build your dream home with Us..</p>
+				</div>
+				<div class="col-md-4 col-sm-4 col-xs-6 services-grid bottom-grids"
+					data-aos="fade-left">
+					<span class="glyphicon glyphicon-cutlery effect-1"
+						aria-hidden="true"></span>
+					<h5>Hotels</h5>
+					<p>We also design hotels and many more thing at best price..</p>
+				</div>
+				<div class="col-md-4 col-sm-4 col-xs-6 services-grid bottom-grids"
+					data-aos="flip-left">
+					<span class="glyphicon glyphicon-th-large effect-1"
+						aria-hidden="true"></span>
+					<h5>Architecture</h5>
+					<p>We have best architectute with us to design your dream</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
 		</div>
-		<div class="services-w3ls-row">
-			<div
-				class="col-md-4 col-sm-4 col-xs-6 services-grid agileits-w3layouts"
-				data-aos="flip-left">
-				<span class="glyphicon glyphicon-home effect-1" aria-hidden="true"></span>
-				<h5>Appartment</h5>
-				<p>We provide Appartments at your prefered location..</p>
-			</div>
-			<div
-				class="col-md-4 col-sm-4 col-xs-6 services-grid agileits-w3layouts"
-				data-aos="fade-right">
-				<span class="glyphicon glyphicon-list-alt effect-1"
-					aria-hidden="true"></span>
-				<h5>Individual Home</h5>
-				<p>Get your dream Individual home at your prefered Location..</p>
-			</div>
-			<div
-				class="col-md-4 col-sm-4 col-xs-6 services-grid agileits-w3layouts"
-				data-aos="flip-right">
-				<span class="glyphicon glyphicon-tree-deciduous effect-1"
-					aria-hidden="true"></span>
-				<h5>Interrior Design</h5>
-				<p>Decore your home with better planning and Build your dream
-					home with us..</p>
-			</div>
-			<div class="col-md-4 col-sm-4 col-xs-6 services-grid bottom-grids"
-				data-aos="flip-left">
-				<span class="glyphicon glyphicon-globe effect-1" aria-hidden="true"></span>
-				<h5>Open Land</h5>
-				<p>Bye your own land and build your dream home with Us..</p>
-			</div>
-			<div class="col-md-4 col-sm-4 col-xs-6 services-grid bottom-grids"
-				data-aos="fade-left">
-				<span class="glyphicon glyphicon-cutlery effect-1"
-					aria-hidden="true"></span>
-				<h5>Hotels</h5>
-				<p>We also design hotels and many more thing at best price..</p>
-			</div>
-			<div class="col-md-4 col-sm-4 col-xs-6 services-grid bottom-grids"
-				data-aos="flip-left">
-				<span class="glyphicon glyphicon-th-large effect-1"
-					aria-hidden="true"></span>
-				<h5>Architecture</h5>
-				<p>We have best architectute with us to design your dream</p>
-			</div>
-			<div class="clearfix"></div>
-		</div>
-	</div></div>
+	</div>
 
 	<!--  --gallery--------->
-	
-	<div id="gallery" class="jumbotron gallery cd-section" >
-   <div class="container gallery-container">
-<div class="agileits-hdng">
-				<h3 class="w3stitle" style="color:black;">
+
+	<div id="gallery" class="jumbotron gallery cd-section">
+		<div class="container gallery-container">
+			<div class="agileits-hdng">
+				<h3 class="w3stitle" style="color: black;">
 					<span>Gallery</span>
 				</h3>
 			</div>
-			    <div class="tz-gallery">
+			<div class="tz-gallery">
 
-        <div class="row" >
+				<div class="row">
 
-            <div class="col-sm-6 col-md-3" data-aos="flip-left" data-aos-duration="2000">
-                <div class="thumbnail">
-                    <a class="lightbox" href="${pageContext.request.contextPath}/images/img5.jpg">
-                        <img src="${pageContext.request.contextPath}/images/img5.jpg" alt="Park" style=" width: 298px;
-    height: 223px;">
-                    </a>
-                                   </div>
-            </div>
-            <div class="col-sm-6 col-md-3" data-aos="zoom-in" data-aos-duration="2000">
-                <div class="thumbnail">
-                    <a class="lightbox" href="${pageContext.request.contextPath}/images/img4.jpg" style="border-color: orange;border-radius: 10px;width: ;" >
-                        <img src="${pageContext.request.contextPath}/images/img4.jpg" alt="Bridge" style=" width: 298px;
-    height: 223px;">
-                    </a>
-                                    </div>
-            </div>
-            <div class="col-sm-6 col-md-3" data-aos="flip-right" data-aos-duration="2000">
-                <div class="thumbnail">
-                    <a class="lightbox" href="${pageContext.request.contextPath}/images/img1.jpg" >
-                        <img src="${pageContext.request.contextPath}/images/img1.jpg" alt="Tuneel"    style=" width: 298px;
-    height: 223px;">
-                    </a>
-                    
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-3" data-aos="flip-right" data-aos-duration="2000">
-                <div class="thumbnail">
-                    <a class="lightbox" href="${pageContext.request.contextPath}/images/img2.jpg">
-                        <img src="${pageContext.request.contextPath}/images/img2.jpg" alt="Tuneel" style=" width: 298px;
-    height: 223px;">
-                    </a>
-                    
-                </div>
-            </div>
-        </div>
-         <div class="row" >
-            <div class="col-sm-6 col-md-3" data-aos="flip-left" data-aos-duration="2000">
-                <div class="thumbnail">
-                    <a class="lightbox" href="${pageContext.request.contextPath}/images/h1.jpg">
-                        <img src="${pageContext.request.contextPath}/images/h1.jpg" alt="Coast" style=" width: 298px;
-    height: 223px;">
-                    </a>
-                    
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-3" data-aos="zoom-in" data-aos-duration="2000">
-                <div class="thumbnail">
-                    <a class="lightbox" href="${pageContext.request.contextPath}/images/t1.jpg">
-                        <img src="${pageContext.request.contextPath}/images/t1.jpg" alt="Rails" style=" width: 298px;
-    height: 223px;">
-                    </a>
-                    </div>
-            </div>
-            <div class="col-sm-6 col-md-3" data-aos="flip-right" data-aos-duration="2000">
-                <div class="thumbnail">
-                    <a class="lightbox" href="${pageContext.request.contextPath}/images/t1.jpg">
-                        <img src="${pageContext.request.contextPath}/images/t1.jpg" alt="Traffic" style=" width: 298px;
-    height: 223px;">
-                    </a>
-                    
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-3" data-aos="flip-right" data-aos-duration="2000">
-                <div class="thumbnail">
-                    <a class="lightbox" href="${pageContext.request.contextPath}/images/h3.jpg">
-                        <img src="${pageContext.request.contextPath}/images/h3.jpg" alt="Tuneel" style=" width: 298px;
-    height: 223px;">
-                    </a>
-                    
-                </div>
-            </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        
-    
+					<div class="col-sm-6 col-md-3" data-aos="flip-left"
+						data-aos-duration="2000">
+						<div class="thumbnail">
+							<a class="lightbox"
+								href="${pageContext.request.contextPath}/images/img5.jpg"> <img
+								src="${pageContext.request.contextPath}/images/img5.jpg"
+								alt="Park" style="width: 298px; height: 223px;">
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3" data-aos="zoom-in"
+						data-aos-duration="2000">
+						<div class="thumbnail">
+							<a class="lightbox"
+								href="${pageContext.request.contextPath}/images/img4.jpg"
+								style="border-color: orange; border-radius: 10px; width:;">
+								<img src="${pageContext.request.contextPath}/images/img4.jpg"
+								alt="Bridge" style="width: 298px; height: 223px;">
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3" data-aos="flip-right"
+						data-aos-duration="2000">
+						<div class="thumbnail">
+							<a class="lightbox"
+								href="${pageContext.request.contextPath}/images/img1.jpg">
+								<img src="${pageContext.request.contextPath}/images/img1.jpg"
+								alt="Tuneel" style="width: 298px; height: 223px;">
+							</a>
+
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3" data-aos="flip-right"
+						data-aos-duration="2000">
+						<div class="thumbnail">
+							<a class="lightbox"
+								href="${pageContext.request.contextPath}/images/img2.jpg"> <img
+								src="${pageContext.request.contextPath}/images/img2.jpg"
+								alt="Tuneel" style="width: 298px; height: 223px;">
+							</a>
+
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6 col-md-3" data-aos="flip-left"
+						data-aos-duration="2000">
+						<div class="thumbnail">
+							<a class="lightbox"
+								href="${pageContext.request.contextPath}/images/h1.jpg"> <img
+								src="${pageContext.request.contextPath}/images/h1.jpg"
+								alt="Coast" style="width: 298px; height: 223px;">
+							</a>
+
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3" data-aos="zoom-in"
+						data-aos-duration="2000">
+						<div class="thumbnail">
+							<a class="lightbox"
+								href="${pageContext.request.contextPath}/images/t1.jpg"> <img
+								src="${pageContext.request.contextPath}/images/t1.jpg"
+								alt="Rails" style="width: 298px; height: 223px;">
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3" data-aos="flip-right"
+						data-aos-duration="2000">
+						<div class="thumbnail">
+							<a class="lightbox"
+								href="${pageContext.request.contextPath}/images/t1.jpg"> <img
+								src="${pageContext.request.contextPath}/images/t1.jpg"
+								alt="Traffic" style="width: 298px; height: 223px;">
+							</a>
+
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3" data-aos="flip-right"
+						data-aos-duration="2000">
+						<div class="thumbnail">
+							<a class="lightbox"
+								href="${pageContext.request.contextPath}/images/h3.jpg"> <img
+								src="${pageContext.request.contextPath}/images/h3.jpg"
+								alt="Tuneel" style="width: 298px; height: 223px;">
+							</a>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
 
 	<div id="project" class="blog cd-section">
 		<div class="container">
 			<div class="agileits-hdng">
-				<h3 class="w3stitle" style="color:black;">
+				<h3 class="w3stitle" style="color: black;">
 					<span>Our Projects</span>
 				</h3>
 			</div>
 			<div class="blog-agileinfo">
 				<div class="col-md-7 blog-w3grid-img">
 					<a href="#myModal" data-toggle="modal" class="wthree-blogimg">
-						<img src="${pageContext.request.contextPath}/images/h1.jpg" class="img-responsive" alt="">
+						<img src="${pageContext.request.contextPath}/images/h1.jpg"
+						class="img-responsive" alt="">
 					</a>
 				</div>
 				<div class="col-md-5 blog-w3grid-text">
@@ -596,10 +623,10 @@
 				src="https://maps.google.com/maps?q=maximiner&t=&z=17&ie=UTF8&iwloc=&output=embed"></iframe>
 			<a href="https://www.pureblack.de">internetagentur</a>
 		</div>
-		
+
 	</div>
-	
-	
+
+
 
 
 	<!-- <!-- 	building -->
@@ -627,9 +654,9 @@
 		});
 	</script>
 	<script>
-    baguetteBox.run('.tz-gallery');
-</script>
-	
+		baguetteBox.run('.tz-gallery');
+	</script>
+
 	<script>
 		$(function() {
 			$('.wthree-btn').on(
@@ -661,6 +688,6 @@
 	<script>
 		var scroll = new SmoothScroll('a[href*="#"]');
 	</script>
-	
+
 </body>
 </html>
