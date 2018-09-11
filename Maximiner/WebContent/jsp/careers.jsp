@@ -103,7 +103,7 @@
 		} catch (Exception e) 
 		{
 			out.println("<script> ");
-			out.println("alert(\"You have to Login First!!!!!!!!!!!!!!!!\");");
+			out.println("alert(\"You have to Login First to apply a job!!!!!!!!!!!!!!!!\");");
 			out.println("location='Login.jsp'");
 			out.println("</script>");
 		}
