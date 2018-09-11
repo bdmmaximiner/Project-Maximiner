@@ -119,7 +119,7 @@
 		</a>
 	</h5>
 	&nbsp
-	<a href="signout.jsp">Signout</a>
+	<a href="jsp/signout.jsp">Signout</a>
 	<header class="header">
 	<div class="container">
 		<div class="row">
