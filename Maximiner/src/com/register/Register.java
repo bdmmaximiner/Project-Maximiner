@@ -50,10 +50,10 @@ public class Register extends HttpServlet {
 				Class.forName("oracle.jdbc.driver.OracleDriver");
 				Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "system");
 				stmt = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
-				stmt.executeQuery("DECLARE \r\n" + "    NCOUNT NUMBER; \r\n" + "    V_SQL  LONG; \r\n"
-						+ "    V_SQL1 LONG; \r\n" + "    TRIG   LONG; \r\n" + "BEGIN \r\n" + "    SELECT COUNT(*) \r\n"
-						+ "    INTO   NCOUNT \r\n" + "    FROM   DBA_TABLES \r\n"
-						+ "    WHERE  TABLE_NAME = 'MAXIMINER_EMP'; \r\n" + "\r\n" + "    IF ( NCOUNT <= 0 ) THEN \r\n"
+				stmt.executeQuery("DECLARE \r\n" + "    NCOUNT NUMBER; \r\n" + "    V_SQL  LONG; \r\n" + "   \r\n"
+						+ "     \r\n" + "BEGIN \r\n" + "    SELECT COUNT(*) \r\n" + "    INTO   NCOUNT \r\n"
+						+ "    FROM   DBA_TABLES \r\n" + "    WHERE  TABLE_NAME = 'MAXIMINER_EMP'; \r\n" + "\r\n"
+						+ "    IF ( NCOUNT <= 0 ) THEN \r\n"
 						+ "      V_SQL := 'CREATE TABLE \"SYSTEM\".\"MAXIMINER_EMP\" \r\n"
 						+ "   (	\"FIRST_NAME\" VARCHAR2(100 BYTE), \r\n" + "	\"LAST_NAME\" VARCHAR2(100 BYTE), \r\n"
 						+ "	\"CONTACT_NO\" VARCHAR2(100 BYTE), \r\n" + "	\"USERNAME\" VARCHAR2(100 BYTE), \r\n"
@@ -61,9 +61,8 @@ public class Register extends HttpServlet {
 						+ "	\"PASSWORD\" VARCHAR2(100 BYTE), \r\n" + "	\"CONFIRM_PASSWORD\" VARCHAR2(100 BYTE), \r\n"
 						+ "	\"BIRTH_DATE\" VARCHAR2(100 BYTE), \r\n" + "	\"JOINING_DATE\" VARCHAR2(100 BYTE), \r\n"
 						+ "	\"EMAIL\" VARCHAR2(100 BYTE), \r\n" + "	\"ADDRESS\" VARCHAR2(100 BYTE)\r\n" + "   )\r\n"
-						+ "   '; \r\n" + "\r\n" + "      EXECUTE IMMEDIATE V_SQL; \r\n" + "\r\n"
-						+ "      EXECUTE IMMEDIATE V_SQL1; \r\n" + "\r\n" + "      EXECUTE IMMEDIATE TRIG; \r\n"
-						+ "    END IF; \r\n" + "END; ");
+						+ "   '; \r\n" + "\r\n" + "      EXECUTE IMMEDIATE V_SQL; \r\n" + "\r\n" + "     \r\n" + "\r\n"
+						+ "   \r\n" + "    END IF; \r\n" + "END; ");
 
 				PreparedStatement ps = con.prepareStatement(
 						"INSERT INTO MAXIMINER_EMP (FIRST_NAME, LAST_NAME, CONTACT_NO, USERNAME,DESIGNATION,GENDER,PASSWORD,CONFIRM_PASSWORD,BIRTH_DATE,JOINING_DATE,EMAIL,ADDRESS) VALUES(?,?,?,?,?,?,?,?,?,?,?,?)");
