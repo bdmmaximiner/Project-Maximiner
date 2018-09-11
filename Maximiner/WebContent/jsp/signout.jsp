@@ -8,7 +8,7 @@
 </head>
 <body>
 <%
-session.invalidate();
+session.invalidate(); //session is going to deactivate
 response.sendRedirect("index.jsp");
 %>
 </body>

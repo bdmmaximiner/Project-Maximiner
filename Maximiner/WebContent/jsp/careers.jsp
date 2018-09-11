@@ -9,16 +9,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <!-- Include All CSS -->
-<link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/bootstrap.css" />
 <link rel="stylesheet" type="text/css"
 	href="../css/font-awesome.min.css" />
-<link rel="stylesheet" type="text/css" href="../css/owl.carousel.css" />
-<link rel="stylesheet" type="text/css" href="../css/owl.theme.css" />
-<link rel="stylesheet" type="text/css" href="../css/magnific-popup.css" />
-<link rel="stylesheet" type="text/css" href="../css/preset.css" />
-<link rel="stylesheet" type="text/css" href="../css/animate.css" />
-<link rel="stylesheet" type="text/css" href="../css/style.css" />
-<link rel="stylesheet" type="text/css" href="../css/responsive.css" />
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/owl.carousel.css" />
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/owl.theme.css" />
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/magnific-popup.css" />
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/preset.css" />
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/animate.css" />
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/style.css" />
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/responsive.css" />
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script
