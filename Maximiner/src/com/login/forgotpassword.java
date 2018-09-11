@@ -18,7 +18,7 @@ public class forgotpassword extends HttpServlet
 		RequestDispatcher rd=null; 
 		response.setContentType("text/html;charset=UTF-8");
 		PrintWriter out = response.getWriter();
-		String message = "Dear Candidate," + "\n\n" + "Please visit this link to proceed http://localhost:8080/Maximiner_Project/PasswordReset.jsp." + "\n\n" + "Thank you," + "\n" + "Team Maximiner";
+		String message = "Dear Candidate," + "\n\n" + "Please visit this link to proceed http://localhost:8080/jsp/Maximiner_Project/PasswordReset.jsp." + "\n\n" + "Thank you," + "\n" + "Team Maximiner";
 		String usermail=request.getParameter("forgotemail");
 		if(EmployeeValidate.CheckEmail(usermail))
 		{	

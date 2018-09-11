@@ -12,7 +12,7 @@ public class EmployeeValidate
      boolean st =false;
      try
      {
-    	 Class.forName("oracle.jdbc.driver.OracleDriver");
+        Class.forName("oracle.jdbc.driver.OracleDriver");
  		Connection con= DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","system");
         PreparedStatement ps =con.prepareStatement("select * from maximiner_emp where Email=? and Password=?");
         ps.setString(1, username);

@@ -57,12 +57,12 @@ public class Login extends HttpServlet
 	    	    out.println("<html>");
 	 			out.println("<head>");
 	 			out.println("<script>");
-	 			out.println("alert('Invalid Username or Password')");
+	 			out.println("alert('Invalid Email or Password')");
+	 			
 	 			out.println("</script>");
 	 			out.println("</head>");
 	 			out.println("<html>");
-	    		
-	    		
+	 			
 	    		RequestDispatcher rs = request.getRequestDispatcher("jsp/Login.jsp");
 	    		rs.include(request, response);
 	    	}
