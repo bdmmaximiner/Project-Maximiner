@@ -110,7 +110,7 @@
 		}		
 		catch (Exception e) 
 		{			
-			e.printStackTrace();
+			e.printStackTrace(); //If not null pointer,then it gives other exceptions.
 		}
 	%>
 	<h1>Welcome</h1>
