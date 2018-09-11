@@ -27,7 +27,7 @@
 	src="${pageContext.request.contextPath}/js/javascript.js"></script>
 </head>
 <body>
-	<form action="${pageContext.request.contextPath}/regVal" id=register
+	<form action="<%=request.getContextPath()%>/regVal" id=register
 		method="post">
 		<div id="main"></div>
 		<div id="main2">
