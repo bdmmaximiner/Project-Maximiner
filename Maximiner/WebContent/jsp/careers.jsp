@@ -100,12 +100,17 @@
 				String username = session.getAttribute("username").toString();
 
 			}
-		} catch (Exception e) 
+		}
+		catch(NullPointerException n)
 		{
 			out.println("<script> ");
-			out.println("alert(\"You have to Login First to apply a job!!!!!!!!!!!!!!!!\");");
+			out.println("alert(\"You have to Login First to apply ajob!!!!!!!!!!!!!!!!\");");
 			out.println("location='Login.jsp'");
 			out.println("</script>");
+		}		
+		catch (Exception e) 
+		{			
+			e.printStackTrace();
 		}
 	%>
 	<h1>Welcome</h1>
