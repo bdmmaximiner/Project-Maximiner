@@ -93,16 +93,19 @@
 	<%
 		RequestDispatcher rd = null;
 		session = request.getSession();
-		try {
-			if (session != null) {
+		try 
+		{
+			if (session != null) 
+			{
 				String username = session.getAttribute("username").toString();
 
 			}
 		} catch (Exception e) 
 		{
-
-			response.sendRedirect("Login.jsp"); // If session=null redirect to NULL
-
+			out.println("<script> ");
+			out.println("alert(\"You have to Login First!!!!!!!!!!!!!!!!\");");
+			out.println("location='Login.jsp'");
+			out.println("</script>");
 		}
 	%>
 	<h1>Welcome</h1>
