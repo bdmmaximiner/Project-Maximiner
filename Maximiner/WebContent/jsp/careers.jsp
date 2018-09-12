@@ -55,7 +55,8 @@
 	font-size: 30px;
 }
 
-.modal-footer {
+.modal-footer 
+{
 	background-color: #008080;
 }
 </style>
@@ -104,7 +105,7 @@
 		catch(NullPointerException n)
 		{
 			out.println("<script> ");
-			out.println("alert(\"You have to Login First to apply ajob!!!!!!!!!!!!!!!!\");");
+			out.println("alert(\"You have to Login First to apply a job!!!!!!!!!!!!!!!!\");");
 			out.println("location='Login.jsp'");
 			out.println("</script>");
 		}		
@@ -115,11 +116,11 @@
 	%>
 	<h1>Welcome</h1>
 	<h5>
-		<a href="jsp/careers.jsp">"<%=session.getAttribute("username")%>"
+		<a href="careers.jsp">"<%=session.getAttribute("username")%>"
 		</a>
 	</h5>
 	&nbsp
-	<a href="jsp/signout.jsp">Signout</a>
+	<a href="signout.jsp">Signout</a>
 	<header class="header">
 	<div class="container">
 		<div class="row">

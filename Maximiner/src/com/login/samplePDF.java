@@ -14,9 +14,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Part;
-@WebServlet("/career")
+@WebServlet("/samplePDF")
 @MultipartConfig(maxFileSize = 16177215)	
-public class career extends HttpServlet 
+public class samplePDF extends HttpServlet 
 {	
 	// database connection settings
 	private String dbURL = "jdbc:oracle:thin:@localhost:1521:xe";
