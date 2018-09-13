@@ -3,14 +3,11 @@ package com.maximiner;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.sql.Blob;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import oracle.sql.BLOB;
-
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -76,7 +73,7 @@ public class DBFileDownloadServlet extends HttpServlet {
 
 				// set content properties and header attributes for the response
 				response.setContentType(mimeType);
-//				response.setContentLength(fileLength);
+				// response.setContentLength(fileLength);
 				String headerKey = "Content-Disposition";
 				String headerValue = String.format("attachment; filename=\"%s\"", fileName);
 				response.setHeader(headerKey, headerValue);
