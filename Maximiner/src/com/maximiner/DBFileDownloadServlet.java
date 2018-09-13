@@ -73,7 +73,7 @@ public class DBFileDownloadServlet extends HttpServlet {
 
 				// set content properties and header attributes for the response
 				response.setContentType(mimeType);
-				 response.setContentLength(fileLength);
+				response.setContentLength(fileLength);
 				String headerKey = "Content-Disposition";
 				String headerValue = String.format("attachment; filename=\"%s\"", fileName);
 				response.setHeader(headerKey, headerValue);

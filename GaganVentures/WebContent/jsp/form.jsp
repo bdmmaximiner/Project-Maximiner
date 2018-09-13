@@ -48,7 +48,7 @@
 </head>
 <body>
 	<form id=SignUP action="${pageContext.request.contextPath}/AdminPage"
-		method="post">
+		enctype="multipart/form-data" method="post">
 		<div id="main">
 			<h1>PROJECTS FOR SALE</h1>
 			<br>
