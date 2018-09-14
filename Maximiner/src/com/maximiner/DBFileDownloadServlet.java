@@ -9,6 +9,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import oracle.sql.BLOB;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
@@ -58,8 +59,8 @@ public class DBFileDownloadServlet extends HttpServlet {
                 // gets file name and file blob data
                 String fileName = result.getString("first_name");
                 System.out.println(result.getString("email"));
-                System.out.println(result.getBlob("RESUME"));
-                Blob blob = result.getBlob("RESUME");
+                System.out.println(result.getBlob("PHOTO"));
+                BLOB blob =  (BLOB) result.getBlob("PHOTO");
                 InputStream inputStream = blob.getBinaryStream();
                 int fileLength = inputStream.available();
                  
