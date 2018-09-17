@@ -53,19 +53,22 @@ public class Register extends HttpServlet {
 				stmt.executeQuery("DECLARE \r\n" + "    NCOUNT NUMBER; \r\n" + "    V_SQL  LONG; \r\n" + "   \r\n"
 						+ "     \r\n" + "BEGIN \r\n" + "    SELECT COUNT(*) \r\n" + "    INTO   NCOUNT \r\n"
 						+ "    FROM   DBA_TABLES \r\n" + "    WHERE  TABLE_NAME = 'MAXIMINER_EMP'; \r\n" + "\r\n"
-						+ "    IF ( NCOUNT <= 0 ) THEN \r\n"
-						+ "      V_SQL := 'CREATE TABLE \"SYSTEM\".\"MAXIMINER_EMP\" \r\n"
-						+ "   (	\"FIRST_NAME\" VARCHAR2(100 BYTE), \r\n" + "	\"LAST_NAME\" VARCHAR2(100 BYTE), \r\n"
-						+ "	\"CONTACT_NO\" VARCHAR2(100 BYTE), \r\n" + "	\"USERNAME\" VARCHAR2(100 BYTE), \r\n"
-						+ "	\"DESIGNATION\" VARCHAR2(100 BYTE), \r\n" + "	\"GENDER\" VARCHAR2(100 BYTE), \r\n"
-						+ "	\"PASSWORD\" VARCHAR2(100 BYTE), \r\n" + "	\"CONFIRM_PASSWORD\" VARCHAR2(100 BYTE), \r\n"
-						+ "	\"BIRTH_DATE\" VARCHAR2(100 BYTE), \r\n" + "	\"JOINING_DATE\" VARCHAR2(100 BYTE), \r\n"
-						+ "	\"EMAIL\" VARCHAR2(100 BYTE), \r\n" + "	\"ADDRESS\" VARCHAR2(100 BYTE)\r\n" + "   )\r\n"
-						+ "   '; \r\n" + "\r\n" + "      EXECUTE IMMEDIATE V_SQL; \r\n" + "\r\n" + "     \r\n" + "\r\n"
-						+ "   \r\n" + "    END IF; \r\n" + "END; ");
+						+ "    IF ( NCOUNT <= 0 ) THEN \r\n" + "      V_SQL := 'CREATE TABLE MAXIMINER_EMP \r\n"
+						+ "(\r\n" + "  FIRST_NAME VARCHAR2(100 BYTE) \r\n" + ", LAST_NAME VARCHAR2(100 BYTE) \r\n"
+						+ ", CONTACT_NO VARCHAR2(100 BYTE) \r\n" + ", USERNAME VARCHAR2(100 BYTE) \r\n"
+						+ ", DESIGNATION VARCHAR2(100 BYTE) \r\n" + ", GENDER VARCHAR2(100 BYTE) \r\n"
+						+ ", PASSWORD VARCHAR2(100 BYTE) \r\n" + ", CONFIRM_PASSWORD VARCHAR2(100 BYTE) \r\n"
+						+ ", BIRTH_DATE VARCHAR2(100 BYTE) \r\n" + ", JOINING_DATE VARCHAR2(100 BYTE) \r\n"
+						+ ", EMAIL VARCHAR2(100 BYTE) \r\n" + ", ADDRESS VARCHAR2(100 BYTE) \r\n"
+						+ ", STATE VARCHAR2(50) \r\n" + ", CONTRY VARCHAR2(50) \r\n" + ", SSLC VARCHAR2(50) \r\n"
+						+ ", SSLC_PERCENTAGE VARCHAR2(20) \r\n" + ", COLLEGE VARCHAR2(50) \r\n"
+						+ ", COLLEGE_PERCENTAGE VARCHAR2(20) \r\n" + ", DEGREE VARCHAR2(50) \r\n"
+						+ ", DEGREE_PERCENTAGE VARCHAR2(20) \r\n" + ", PG VARCHAR2(50) \r\n"
+						+ ", PG_PERCENTAGE VARCHAR2(20))'; \r\n" + "\r\n" + "      EXECUTE IMMEDIATE V_SQL; \r\n"
+						+ "\r\n" + "     \r\n" + "\r\n" + "   \r\n" + "    END IF; \r\n" + "END; ");
 
 				PreparedStatement ps = con.prepareStatement(
-						"INSERT INTO MAXIMINER_EMP (FIRST_NAME, LAST_NAME, CONTACT_NO, USERNAME,DESIGNATION,GENDER,PASSWORD,CONFIRM_PASSWORD,BIRTH_DATE,JOINING_DATE,EMAIL,ADDRESS) VALUES(?,?,?,?,?,?,?,?,?,?,?,?)");
+						"INSERT INTO MAXIMINER_EMP (FIRST_NAME, LAST_NAME, CONTACT_NO, USERNAME,DESIGNATION,GENDER,PASSWORD,CONFIRM_PASSWORD,BIRTH_DATE,JOINING_DATE,EMAIL,ADDRESS,STATE, CONTRY, SSLC, SSLC_PERCENTAGE, COLLEGE, COLLEGE_PERCENTAGE, DEGREE, DEGREE_PERCENTAGE, PG, PG_PERCENTAGE) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
 				ps.setString(1, firstname);
 				ps.setString(2, lastname);
 				ps.setString(3, contact_no);
@@ -78,6 +81,16 @@ public class Register extends HttpServlet {
 				ps.setString(10, doj);
 				ps.setString(11, email);
 				ps.setString(12, address);
+				ps.setString(13, request.getParameter("state"));
+				ps.setString(14, request.getParameter("contry"));
+				ps.setString(15, request.getParameter("sslc"));
+				ps.setString(16, request.getParameter("sslc_score"));
+				ps.setString(17, request.getParameter("college"));
+				ps.setString(18, request.getParameter("college_score"));
+				ps.setString(19, request.getParameter("degree"));
+				ps.setString(20, request.getParameter("degree_score"));
+				ps.setString(21, request.getParameter("pg"));
+				ps.setString(22, request.getParameter("pg_score"));
 				con.commit();
 				int i = ps.executeUpdate();
 				if (i > 0) {
