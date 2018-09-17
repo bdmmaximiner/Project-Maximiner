@@ -32,8 +32,7 @@
 </head>
 <body>
 
-	<form name="frm" action="<%=request.getContextPath()%>/register"
-		id=register method="post">
+	<form name="frm" action="<%=request.getContextPath()%>/register" id=register method="post" enctype="multipart/form-data">
 		<div id="main"></div>
 		<div id="main2">
 			<div class="login100-form-title"
@@ -350,6 +349,23 @@
 								class="form-control" id="pg_score" type="text" required />
 						</div>
 					</div>
+					
+					<div class="form-group ">
+						<label class="control-label " for="Resume_List"> Resume
+						</label>
+						<div class="input-group">
+							<div class="input-group-addon">
+								<span class="glyphicon glyphicon-home"></span>
+							</div>
+							<input name="resume" placeholder="Resume"
+								class="form-control" id="resume" type="file" required />
+						</div>
+					</div>
+					
+					
+					
+					
+					
 
 				</div>
 

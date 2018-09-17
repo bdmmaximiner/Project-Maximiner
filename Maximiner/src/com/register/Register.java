@@ -1,6 +1,7 @@
 package com.register;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -10,14 +11,17 @@ import java.sql.Statement;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import javax.servlet.http.Part;
 
 import com.login.*;
-
-public class Register extends HttpServlet {
+@MultipartConfig(maxFileSize = 16177215)	
+public class Register extends HttpServlet 
+{
 	private static final long serialVersionUID = 1L;
 
 	public Register() {
@@ -27,7 +31,7 @@ public class Register extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		Statement stmt = null;
-
+		InputStream inputstream2 = null;
 		response.setContentType("text/html;charset=UTF-8");
 		PrintWriter out = response.getWriter();
 		String firstname = request.getParameter("first_name");
@@ -42,11 +46,12 @@ public class Register extends HttpServlet {
 		String doj = request.getParameter("joining_date");
 		String email = request.getParameter("email");
 		String address = request.getParameter("address");
-		try {
+		try 
+		{
 			boolean result1 = EmployeeValidate.Check(username);
 			boolean result2 = EmployeeValidate.CheckRegEmail(email);
-			if (!result1 && !result2) {
-
+			if (!result1 && !result2) 
+			{
 				Class.forName("oracle.jdbc.driver.OracleDriver");
 				Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "system");
 				stmt = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
@@ -64,11 +69,11 @@ public class Register extends HttpServlet {
 						+ ", SSLC_PERCENTAGE VARCHAR2(20) \r\n" + ", COLLEGE VARCHAR2(50) \r\n"
 						+ ", COLLEGE_PERCENTAGE VARCHAR2(20) \r\n" + ", DEGREE VARCHAR2(50) \r\n"
 						+ ", DEGREE_PERCENTAGE VARCHAR2(20) \r\n" + ", PG VARCHAR2(50) \r\n"
-						+ ", PG_PERCENTAGE VARCHAR2(20))'; \r\n" + "\r\n" + "      EXECUTE IMMEDIATE V_SQL; \r\n"
+						+ ", PG_PERCENTAGE VARCHAR2(20),RESUME BLOB)'; \r\n" + "\r\n" + "      EXECUTE IMMEDIATE V_SQL; \r\n"
 						+ "\r\n" + "     \r\n" + "\r\n" + "   \r\n" + "    END IF; \r\n" + "END; ");
 
 				PreparedStatement ps = con.prepareStatement(
-						"INSERT INTO MAXIMINER_EMP (FIRST_NAME, LAST_NAME, CONTACT_NO, USERNAME,DESIGNATION,GENDER,PASSWORD,CONFIRM_PASSWORD,BIRTH_DATE,JOINING_DATE,EMAIL,ADDRESS,STATE, CONTRY, SSLC, SSLC_PERCENTAGE, COLLEGE, COLLEGE_PERCENTAGE, DEGREE, DEGREE_PERCENTAGE, PG, PG_PERCENTAGE) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+						"INSERT INTO MAXIMINER_EMP (FIRST_NAME, LAST_NAME, CONTACT_NO, USERNAME,DESIGNATION,GENDER,PASSWORD,CONFIRM_PASSWORD,BIRTH_DATE,JOINING_DATE,EMAIL,ADDRESS,STATE, CONTRY, SSLC, SSLC_PERCENTAGE, COLLEGE, COLLEGE_PERCENTAGE, DEGREE, DEGREE_PERCENTAGE, PG, PG_PERCENTAGE,RESUME) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
 				ps.setString(1, firstname);
 				ps.setString(2, lastname);
 				ps.setString(3, contact_no);
@@ -91,8 +96,22 @@ public class Register extends HttpServlet {
 				ps.setString(20, request.getParameter("degree_score"));
 				ps.setString(21, request.getParameter("pg"));
 				ps.setString(22, request.getParameter("pg_score"));
-				con.commit();
+				Part filePart1 = request.getPart("resume");
+				if (filePart1 != null)
+				{
+					System.out.println(filePart1.getName());
+					System.out.println(filePart1.getSize());
+					System.out.println(filePart1.getContentType());
+					inputstream2 = filePart1.getInputStream();
+				}
+				if (inputstream2 != null) 
+				{
+					ps.setBlob(23, inputstream2);  //It will take any file .pdf, .doc, .txts
+				}
+				
 				int i = ps.executeUpdate();
+				con.commit();
+				
 				if (i > 0) {
 					HttpSession session = request.getSession(true);
 					boolean newSession = session.isNew();
