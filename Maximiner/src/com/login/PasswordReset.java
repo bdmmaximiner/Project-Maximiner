@@ -7,6 +7,8 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import com.maximiner.OracalDatabaseConnect;
 public class PasswordReset extends HttpServlet 
 {
 	private static final long serialVersionUID = 1L;
@@ -27,8 +29,7 @@ public class PasswordReset extends HttpServlet
         	boolean result=EmployeeValidate.CheckUsername(username);
         	if(result)
         	{
-        			Class.forName("oracle.jdbc.driver.OracleDriver");
-        			Connection con= DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","system");
+        			Connection con = new OracalDatabaseConnect().Connect();
         		    PreparedStatement ps=con.prepareStatement("update maximiner_emp SET Password = ? , Confirm_password = ? where Username = ?");
         			ps.setString(1, newpass);
         			ps.setString(2, confirmpass);

@@ -17,14 +17,15 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import javax.servlet.http.Part;
-
+import com.maximiner.*;
 import com.login.*;
 @MultipartConfig(maxFileSize = 16177215)	
 public class Register extends HttpServlet 
 {
 	private static final long serialVersionUID = 1L;
 
-	public Register() {
+	public Register() 
+	{
 		super();
 	}
 
@@ -52,8 +53,9 @@ public class Register extends HttpServlet
 			boolean result2 = EmployeeValidate.CheckRegEmail(email);
 			if (!result1 && !result2) 
 			{
-				Class.forName("oracle.jdbc.driver.OracleDriver");
-				Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "system");
+				//Class.forName("oracle.jdbc.driver.OracleDriver");
+				Connection con = new OracalDatabaseConnect().Connect();
+				
 				stmt = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
 				stmt.executeQuery("DECLARE \r\n" + "    NCOUNT NUMBER; \r\n" + "    V_SQL  LONG; \r\n" + "   \r\n"
 						+ "     \r\n" + "BEGIN \r\n" + "    SELECT COUNT(*) \r\n" + "    INTO   NCOUNT \r\n"

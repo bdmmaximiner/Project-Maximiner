@@ -10,8 +10,7 @@
 <meta name="viewport" content="width=device-width">
 <!-- Include All CSS -->
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/bootstrap.css" />
-<link rel="stylesheet" type="text/css"
-	href="../css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css"href="${pageContext.request.contextPath}/css/font-awesome.min.css" />
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/owl.carousel.css" />
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/owl.theme.css" />
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/magnific-popup.css" />

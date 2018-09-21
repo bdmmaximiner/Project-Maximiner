@@ -18,14 +18,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Part;
 
+import com.maximiner.OracalDatabaseConnect;
+
 @WebServlet("/samplePDF")
 @MultipartConfig(maxFileSize = 16177215)
 public class samplePDF extends HttpServlet {
 	// database connection settings
-	private String dbURL = "jdbc:oracle:thin:@localhost:1521:xe";
-	private String dbUser = "system";
-	private String dbPass = "system";
-
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		Connection conn = null;
@@ -56,8 +54,8 @@ public class samplePDF extends HttpServlet {
 		}
 
 		try {
-			DriverManager.registerDriver(new oracle.jdbc.driver.OracleDriver());
-			conn = DriverManager.getConnection(dbURL, dbUser, dbPass);
+			
+			conn = new OracalDatabaseConnect().Connect();
 			stmt = conn.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
 			stmt.executeQuery("DECLARE \r\n" + "    NCOUNT NUMBER; \r\n" + "    V_SQL  LONG; \r\n" + "   \r\n"
 					+ "     \r\n" + "BEGIN \r\n" + "    SELECT COUNT(*) \r\n" + "    INTO   NCOUNT \r\n"
@@ -100,6 +98,9 @@ public class samplePDF extends HttpServlet {
 		} catch (SQLException ex) {
 			message = "ERROR: " + ex.getMessage(); // set to information
 			ex.printStackTrace();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		} finally {
 			if (conn != null) {
 				try {

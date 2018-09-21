@@ -10,6 +10,8 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import com.maximiner.OracalDatabaseConnect;
 @WebServlet("/contact")
 public class contact extends HttpServlet 
 {
@@ -28,8 +30,7 @@ public class contact extends HttpServlet
 		String message=request.getParameter("message");
 		try
 		{
-			Class.forName("oracle.jdbc.driver.OracleDriver");
-    		Connection con= DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","system");
+			Connection con = new OracalDatabaseConnect().Connect();
     		PreparedStatement ps=con.prepareStatement("insert into contact_info values(?,?,?,?,?)");
     		ps.setString(1, name);
     		ps.setString(2, email);
