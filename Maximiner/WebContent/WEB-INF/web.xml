@@ -58,6 +58,15 @@
     <url-pattern>/Careerapply</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+    <servlet-name>GetEmployee</servlet-name>
+    <servlet-class>com.maximiner.GetEmployee</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>GetEmployee</servlet-name>
+    <url-pattern>/GetEmployee</url-pattern>
+</servlet-mapping>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>index.htm</welcome-file>
