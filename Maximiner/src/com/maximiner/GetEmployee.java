@@ -50,7 +50,11 @@ public class GetEmployee extends HttpServlet {
 			out.println("</thead>");
 			out.println("<tbody>");
 			while (rs.next()) {
-				out.println("<tr><td><b>" + rs.getString(2) + "</b></td>");
+				if (rs.getString(5).toString().equals("True")) {
+					out.println("<tr class='success'><td><b>" + rs.getString(2) + "</b></td>");
+				} else {
+					out.println("<tr class='danger'><td><b>" + rs.getString(2) + "</b></td>");
+				}
 				out.println("<td>" + rs.getString(3) + "</td>");
 				out.println("<td>" + rs.getString(4) + "</td>");
 				out.println("<td>" + rs.getString(5) + "</td></tr>");
