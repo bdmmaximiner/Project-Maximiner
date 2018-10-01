@@ -44,9 +44,11 @@
 	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-	<form action="<%=request.getContextPath()%>/GetEmployee">
+	<form action="<%=request.getContextPath()%>/GetEmployee" method="get">
 		<div align="center" class="container">
 			<select class="col-sm-3 form-control" name="ddlViewBy" id="ddlViewBy">
 				<option value="67">67</option>

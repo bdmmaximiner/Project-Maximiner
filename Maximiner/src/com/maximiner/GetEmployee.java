@@ -31,12 +31,10 @@ public class GetEmployee extends HttpServlet {
 			stmt = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
 			rs = stmt.executeQuery(
 					"select * from ATTN where upper(EMPNO) =upper('" + request.getParameter("ddlViewBy") + "')");
-
-			out.println("<html>");
 			out.println("<script>");
 			out.println("$(document).ready(function() {");
 
-			out.println("document.getElementsById('ddlViewBy').value=\"" + request.getParameter("ddlViewBy") + "\";");
+			out.println("document.getElementById('ddlViewBy').value=\'" + request.getParameter("ddlViewBy") + "\';");
 
 			out.println("});");
 			out.println("</script>");
@@ -61,7 +59,6 @@ public class GetEmployee extends HttpServlet {
 			out.println("</tbody>");
 			out.println("</table>");
 			out.println("</div>");
-			out.println("</html>");
 			rs.close();
 		} catch (Exception e) {
 			e.printStackTrace();
