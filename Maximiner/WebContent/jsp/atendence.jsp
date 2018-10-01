@@ -53,9 +53,11 @@
 			<select class="col-sm-3 form-control" name="ddlViewBy" id="ddlViewBy">
 				<option value="67">67</option>
 				<option value="68">68</option>
-			</select>
+			</select>	
+			<br>	
+		<input class="col-sm-2 btn-success" type="submit" value="OK">
 		</div>
-		<input type="submit" value="OK">
+		<br>
 	</form>
 	<!-- 	<div class="container" id="txtHint"> -->
 	<!-- 		<!--  Contextual classes can be used to color the table, table rows or table cells. The classes that can be used are: .table-primary, .table-success, .table-info, .table-warning, .table-danger, .table-active, .table-secondary, .table-light and .table-dark: -->
