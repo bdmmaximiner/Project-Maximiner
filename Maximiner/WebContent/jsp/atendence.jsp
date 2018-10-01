@@ -24,23 +24,16 @@
 <html lang="en">
 <head>
 <title>Maximiner</title>
-<script>
-	function showCustomer(str) {
-		var xhttp;
-		if (str == "") {
-			document.getElementById("txtHint").innerHTML = "";
-			return;
-		}
-		xhttp = new XMLHttpRequest();
-		xhttp.onreadystatechange = function() {
-			if (this.readyState == 4 && this.status == 200) {
-				document.getElementById("txtHint").innerHTML = this.responseText;
-			}
-		};
-		xhttp.open("GET", "http://localhost:8080/Maximiner/GetEmployee?q=" + str,true);
-		xhttp.send();
-	}
-</script>
+<!-- <script> -->
+<!-- // function showCustomer(str) { // var xhttp; // if (str == "") { // -->
+<!-- document.getElementById("txtHint").innerHTML = ""; // return; // } // -->
+<!-- xhttp = new XMLHttpRequest(); // xhttp.onreadystatechange = function() { -->
+<!-- // if (this.readyState == 4 && this.status == 200) { // -->
+<!-- document.getElementById("txtHint").innerHTML = this.responseText; // } -->
+<!-- // }; // xhttp.open("GET", -->
+<!-- "http://localhost:8080/Maximiner/GetEmployee?q=" + str,true); // -->
+<!-- xhttp.send(); // } -->
+<!--</script> -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet"
@@ -53,30 +46,31 @@
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </head>
 <body>
+	<form action="<%=request.getContextPath()%>/GetEmployee">
+		<div align="center" class="container">
+			<select class="col-sm-3 form-control" name="ddlViewBy" id="ddlViewBy">
+				<option value="67">67</option>
+				<option value="68">68</option>
+			</select>
+		</div>
+		<input type="submit" value="OK">
+	</form>
+	<!-- 	<div class="container" id="txtHint"> -->
+	<!-- 		<!--  Contextual classes can be used to color the table, table rows or table cells. The classes that can be used are: .table-primary, .table-success, .table-info, .table-warning, .table-danger, .table-active, .table-secondary, .table-light and .table-dark: -->
+	<!-- 		<table class="table"> -->
+	<!-- 			<thead> -->
+	<!-- 				<tr> -->
+	<!-- 					<th>Date</th> -->
+	<!-- 					<th>EMPNO</th> -->
+	<!-- 					<th>Name</th> -->
+	<!-- 					<th>Presence</th> -->
+	<!-- 				</tr> -->
+	<!-- 			</thead> -->
+	<!-- 			<tbody> -->
 
-	<div align="center" class="container">
-		<select class="col-sm-3 form-control"
-			onchange="showCustomer(this.value)" id="ddlViewBy">
-			<option>67</option>
-			<option>68</option>
-		</select>
-	</div>
-	<div class="container" id="txtHint">
-		<!--  Contextual classes can be used to color the table, table rows or table cells. The classes that can be used are: .table-primary, .table-success, .table-info, .table-warning, .table-danger, .table-active, .table-secondary, .table-light and .table-dark: -->
-		<table class="table">
-			<thead>
-				<tr>
-					<th>Date</th>
-					<th>EMPNO</th>
-					<th>Name</th>
-					<th>Presence</th>
-				</tr>
-			</thead>
-			<tbody>
-
-			</tbody>
-		</table>
-	</div>
+	<!-- 			</tbody> -->
+	<!-- 		</table> -->
+	<!-- 	</div> -->
 
 </body>
 </html>
