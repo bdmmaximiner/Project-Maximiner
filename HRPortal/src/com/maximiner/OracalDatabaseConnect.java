@@ -10,8 +10,8 @@ public class OracalDatabaseConnect {
 	public Connection Connect() throws Exception {
 		Class.forName("oracle.jdbc.driver.OracleDriver");
 		return DriverManager.getConnection(
-				"jdbc:oracle:thin:@myoracle.cupgnhng2n9m.ap-south-1.rds.amazonaws.com:1521:ORCL", "bhaskar",
-				"123456789!");
+				"jdbc:oracle:thin:@oracle.ccr68wkfvwyr.ap-south-1.rds.amazonaws.com:1521:ORCL", "maximiner",
+				"Maximiner_2018");
 	}
 
 	public static int rowCount(ResultSet rs) throws SQLException {
