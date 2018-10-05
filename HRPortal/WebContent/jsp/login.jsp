@@ -50,11 +50,11 @@
 					<!-- Collapse header -->
 					<div class="navbar-collapse-header d-md-none">
 						<div class="row">
-<!-- 							<div class="col-6 collapse-brand"> -->
-<%-- 								<a href="${pageContext.request.contextPath}/index.html"> <img --%>
-<%-- 									src="${pageContext.request.contextPath}/assets/img/brand/blue.png"> --%>
-<!-- 								</a> -->
-<!-- 							</div> -->
+							<!-- 							<div class="col-6 collapse-brand"> -->
+							<%-- 								<a href="${pageContext.request.contextPath}/index.html"> <img --%>
+							<%-- 									src="${pageContext.request.contextPath}/assets/img/brand/blue.png"> --%>
+							<!-- 								</a> -->
+							<!-- 							</div> -->
 							<div class="col-6 collapse-close">
 								<button type="button" class="navbar-toggler"
 									data-toggle="collapse" data-target="#navbar-collapse-main"
@@ -115,14 +115,16 @@
 							<div class="text-center text-muted mb-4">
 								<b>Sign In</b>
 							</div>
-							<form role="form" name="f1" action="login">
+							<form role="form" name="f1"
+								action="<%=request.getContextPath()%>/Login" method="post">
 								<div class="form-group mb-3">
 									<div class="input-group input-group-alternative">
 										<div class="input-group-prepend">
 											<span class="input-group-text"><i
 												class="ni ni-email-83"></i></span>
 										</div>
-										<input class="form-control" placeholder="Email" type="email">
+										<input class="form-control" placeholder="Employee ID"
+											type="text" name="emp_id">
 									</div>
 								</div>
 
@@ -133,16 +135,16 @@
 												class="ni ni-lock-circle-open"></i></span>
 										</div>
 										<input class="form-control" placeholder="Password"
-											type="password">
+											type="password" name="password">
 									</div>
 								</div>
 
 
 
 								<select class="form-control" name="department">
-									<option>Administration</option>
-									<option>Human Resource</option>
-									<option>Employee</option>
+									<option value="Administration">Administration</option>
+									<option value="Humar Resource">Human Resource</option>
+									<option value="Employee">Employee</option>
 
 								</select>
 
@@ -158,7 +160,7 @@
 									</label>
 								</div>
 								<div class="text-center">
-									<button type="button" class="btn btn-primary my-4">Sign
+									<button type="submit" class="btn btn-primary my-4">Sign
 										in</button>
 								</div>
 							</form>
