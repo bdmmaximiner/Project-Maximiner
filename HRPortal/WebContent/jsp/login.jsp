@@ -66,16 +66,18 @@
 						</div>
 					</div>
 					<!-- Navbar items -->
-					<ul class="navbar-nav ml-auto">
+					
+<!-- 					<ul class="navbar-nav ml-auto"> -->
 
-						<li class="nav-item"><a class="nav-link nav-link-icon"
-							href="${pageContext.request.contextPath}/examples/register.html">
-								<i class="ni ni-circle-08"></i> <span
-								class="nav-link-inner--text">Register</span>
-						</a></li>
+<!-- 						<li class="nav-item"><a class="nav-link nav-link-icon" -->
+<%-- 							href="${pageContext.request.contextPath}/examples/register.html"> --%>
+<!-- 								<i class="ni ni-circle-08"></i> <span -->
+<!-- 								class="nav-link-inner--text">Register</span> -->
+<!-- 						</a></li> -->
 
 
-					</ul>
+<!-- 					</ul> -->
+					
 				</div>
 			</div>
 		</nav>
@@ -143,7 +145,7 @@
 
 								<select class="form-control" name="department">
 									<option value="Administration">Administration</option>
-									<option value="Humar Resource">Human Resource</option>
+									<option value="Human Resource">Human Resource</option>
 									<option value="Employee">Employee</option>
 
 								</select>
