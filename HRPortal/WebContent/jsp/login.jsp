@@ -28,6 +28,8 @@
 <link type="text/css"
 	href="${pageContext.request.contextPath}/assets/css/argon.css?v=1.0.0"
 	rel="stylesheet">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body class="bg-default">
@@ -66,18 +68,18 @@
 						</div>
 					</div>
 					<!-- Navbar items -->
-					
-<!-- 					<ul class="navbar-nav ml-auto"> -->
 
-<!-- 						<li class="nav-item"><a class="nav-link nav-link-icon" -->
-<%-- 							href="${pageContext.request.contextPath}/examples/register.html"> --%>
-<!-- 								<i class="ni ni-circle-08"></i> <span -->
-<!-- 								class="nav-link-inner--text">Register</span> -->
-<!-- 						</a></li> -->
+					<!-- 					<ul class="navbar-nav ml-auto"> -->
+
+					<!-- 						<li class="nav-item"><a class="nav-link nav-link-icon" -->
+					<%-- 							href="${pageContext.request.contextPath}/examples/register.html"> --%>
+					<!-- 								<i class="ni ni-circle-08"></i> <span -->
+					<!-- 								class="nav-link-inner--text">Register</span> -->
+					<!-- 						</a></li> -->
 
 
-<!-- 					</ul> -->
-					
+					<!-- 					</ul> -->
+
 				</div>
 			</div>
 		</nav>
@@ -119,6 +121,7 @@
 							</div>
 							<form role="form" name="f1"
 								action="<%=request.getContextPath()%>/Login" method="post">
+								<input type="hidden" name="index" id="index">
 								<div class="form-group mb-3">
 									<div class="input-group input-group-alternative">
 										<div class="input-group-prepend">
@@ -143,7 +146,7 @@
 
 
 
-								<select class="form-control" name="department">
+								<select class="form-control" id="department" name="department">
 									<option value="Administration">Administration</option>
 									<option value="Human Resource">Human Resource</option>
 									<option value="Employee">Employee</option>
@@ -162,8 +165,9 @@
 									</label>
 								</div>
 								<div class="text-center">
-									<button type="submit" class="btn btn-primary my-4">Sign
-										in</button>
+									<button
+										onclick="document.getElementById('index').value=document.getElementById('department').selectedIndex;"
+										type="submit" class="btn btn-primary my-4">Sign in</button>
 								</div>
 							</form>
 						</div>
