@@ -22,7 +22,7 @@
 <script
 	src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 <link rel="stylesheet" type="text/css"
-	href="${pageContext.request.contextPath}/css/style.css">
+	href="${pageContext.request.contextPath}/assets/css/style.css">
 <script type="text/javascript"
 	src="${pageContext.request.contextPath}/js/javascript.js"></script>
 </head>
@@ -50,8 +50,7 @@
 									placeholder="First Name" required />
 							</div>
 							<div class="form-group">
-								<span id="firstnameInvalid"
-									style="color: red;"> </span>
+								<span id="firstnameInvalid" style="color: red;"> </span>
 							</div>
 						</div>
 

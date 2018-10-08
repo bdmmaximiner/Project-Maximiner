@@ -129,15 +129,18 @@
 					<%@ page import="com.maximiner.OracalDatabaseConnect"%>
 					<%@ page import="javax.servlet.RequestDispatcher"%>
 					<%@ page import="javax.servlet.http.HttpSession"%>
-					<%@ page session="false"%>
 					<%
+					   
+					    session = request.getSession();
+
 						Connection con = null;
 						Statement stmt = null;
 						ResultSet rs = null;
+						
 						try {
 							con = new OracalDatabaseConnect().Connect();
 							stmt = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
-							rs = stmt.executeQuery("SELECT * FROM MENU WHERE LEVEL_NO >=0");
+							rs = stmt.executeQuery("SELECT * FROM MENU WHERE LEVEL_NO >="+session.getAttribute("index"));
 
 							while (rs.next()) {
 					%>

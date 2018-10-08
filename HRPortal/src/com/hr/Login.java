@@ -26,20 +26,17 @@ public class Login extends HttpServlet {
 		if (EmployeeValidate.checkUserInformation(username, password, dept)) {
 
 			HttpSession session = request.getSession(true);
-			boolean newSession = session.isNew();
-			
-			System.out.println("In User Login session is new-->" + newSession);
-			session.setAttribute("username", username);
-			
-			session.setAttribute("index", request.getParameter("index"));
+			boolean newSession = session.isNew();			
+			//System.out.println("In User Login session is new-->" + newSession);
+			session.setAttribute("index", var);			
+			//session.setAttribute("index", var);			
 			RequestDispatcher rs = request.getRequestDispatcher("jsp/Dashboard.jsp");
-			
 			System.out.println("HERE-->"+var);
-			
-			
 			rs.include(request, response);
 
-		} else {
+		} 
+		else 
+		{
 
 			/*
 			 * out.println("<html>"); out.println("<head>"); out.println("<style>");
