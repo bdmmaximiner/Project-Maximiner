@@ -30,7 +30,8 @@ public class Register extends HttpServlet
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
+			throws ServletException, IOException 
+	{
 		Statement stmt = null;
 		InputStream inputstream2 = null;
 		response.setContentType("text/html;charset=UTF-8");

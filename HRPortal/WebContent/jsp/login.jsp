@@ -90,8 +90,7 @@
 					<div class="row justify-content-center">
 						<div class="col-lg-5 col-md-6">
 							<h1 class="text-white">Welcome!</h1>
-							<p class="text-lead text-light">Maximiner Analytics Pvt Ltd
-								Bengaluru.</p>
+							<p class="text-lead text-light">TalentBolt</p>
 						</div>
 					</div>
 				</div>
