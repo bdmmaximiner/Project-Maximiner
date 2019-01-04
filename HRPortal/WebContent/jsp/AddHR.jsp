@@ -30,7 +30,7 @@
 											i++;
 											$('#dynamic_field')
 													.append(
-															"<tr id='row'"+i+"''><td><input type='text' name='qualification' placeholder='Enter Qualification' class='form-control name_list' /></td> <td><input type='text' name='yearofpassing' placeholder='Year of Passing' class='form-control name_list' /></td> <td><input type='text' name='percentage' placeholder='Enter Percentage' class='form-control name_list' /></td> <td><input type='text' name='university' placeholder='Enter University' class='form-control name_list' /></td><td><button type='button' name='remove' id=''"+i+"'' class='btn btn-danger btn_remove'>X</button></td></tr>");
+															"<tr id='row"+i+"'><td><input type='text' name='qualification' placeholder='Enter Qualification' class='form-control name_list' /></td> <td><input type='text' name='yearofpassing' placeholder='Year of Passing' class='form-control name_list' /></td> <td><input type='text' name='percentage' placeholder='Enter Percentage' class='form-control name_list' /></td> <td><input type='text' name='university' placeholder='Enter University' class='form-control name_list' /></td><td><button type='button' name='remove' id='"+i+"' class='btn btn-danger btn_remove'>X</button></td></tr>");
 										});
 
 						$('#plus')
@@ -39,7 +39,7 @@
 											j++;
 											$('#dynamic_field_2')
 													.append(
-															"<tr id='row_2'"+j+"''><td><input type='text' name='companyname' placeholder='Enter The Company Name' class='form-control name_list' /></td> <td><input type='text' name='from_date' placeholder='Enter From Date' class='form-control name_list' /></td> <td><input type='text' name='To_date' placeholder='Enter To Date' class='form-control name_list' /></td> <td><input type='text' name='designation' placeholder='Enter Designation' class='form-control name_list' /></td> <td><input type='text' name='compensation' placeholder='Enter Compensation' class='form-control name_list' /></td> <td><input type='text' name='nature' placeholder='Enter Nature of Responsibilities' class='form-control name_list' /></td> <td><input type='text' name='reason' placeholder='Enter Reason for Leave' class='form-control name_list' /></td><td><button type='button' name='remove' id=''"+j+"'' class='btn btn-danger btn_remove_2'>X</button></td></tr>");
+															"<tr id='row_2"+j+"'><td><input type='text' name='companyname' placeholder='Enter The Company Name' class='form-control name_list' /></td> <td><input type='text' name='from_date' placeholder='Enter From Date' class='form-control name_list' /></td> <td><input type='text' name='To_date' placeholder='Enter To Date' class='form-control name_list' /></td> <td><input type='text' name='designation' placeholder='Enter Designation' class='form-control name_list' /></td> <td><input type='text' name='compensation' placeholder='Enter Compensation' class='form-control name_list' /></td> <td><input type='text' name='nature' placeholder='Enter Nature of Responsibilities' class='form-control name_list' /></td> <td><input type='text' name='reason' placeholder='Enter Reason for Leave' class='form-control name_list' /></td><td><button type='button' name='remove' id='"+j+"' class='btn btn-danger btn_remove_2'>X</button></td></tr>");
 										});
 
 						$(document).on('click', '.btn_remove', function() {
